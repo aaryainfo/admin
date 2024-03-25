@@ -1,0 +1,1406 @@
+.artStudioPage {
+  margin-top: 30px;
+}
+.artStudioPage .imgDiv {
+  position: relative;
+}
+.artStudioPage .imgDiv .mainText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 576px) {
+  .artStudioPage .imgDiv .mainText {
+    left: 50px;
+    top: 30px;
+  }
+}
+.artStudioPage .imgDiv .mainText .horiText {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12.6px;
+}
+@media screen and (max-width: 576px) {
+  .artStudioPage .imgDiv .mainText .horiText {
+    font-size: 12px;
+    letter-spacing: 7.6px;
+  }
+}
+.artStudioPage .imgDiv .mainText .imgText {
+  color: #FFF;
+  font-family: "Gotham Medium";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 426px;
+  padding-top: 40px;
+}
+@media screen and (max-width: 576px) {
+  .artStudioPage .imgDiv .mainText .imgText {
+    font-size: 35px;
+    padding-top: 30px;
+  }
+}
+
+.artStudioStoneBlk {
+  margin-top: -110px;
+}
+@media screen and (max-width: 576px) {
+  .artStudioStoneBlk {
+    margin-top: 0px;
+  }
+}
+
+.ArtSTextSec .InnerText {
+  margin-top: 80px;
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText {
+    margin-top: 40px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv {
+  position: relative;
+}
+.ArtSTextSec .InnerText .artTextDiv .DagadArtText {
+  position: absolute;
+  rotate: -90deg;
+  top: 100px;
+  left: -10px;
+  color: #000;
+  font-family: Gotham;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12.06px;
+}
+@media screen and (max-width: 1199px) {
+  .ArtSTextSec .InnerText .artTextDiv .DagadArtText {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .DagadArtText {
+    position: static;
+    rotate: 0deg;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 1299px) {
+  .ArtSTextSec .InnerText .artTextDiv .DagadArtText.verTxt {
+    left: -50px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText {
+  margin-left: 170px;
+  max-width: 539px;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 1599px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 1299px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt {
+    margin-left: 0px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .txt {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0%;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .txt {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .txt {
+    font-size: 25px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .smTxt {
+  font-size: 34px;
+  padding-top: 50px;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .smTxt {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .smTxt {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .smTxt {
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText.artsThreeTxt .smTxt {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText {
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText {
+    margin-left: 0px;
+    padding: 30px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText .txt {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .txt {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .txt {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .txt {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .txt {
+    font-size: 25px;
+  }
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText .middleTxt {
+  color: #000;
+  font-family: Gotham;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  padding-top: 30px;
+}
+.ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextDiv .ArtText .smTxt {
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 32px;
+  }
+}
+.ArtSTextSec .InnerText .artTextRight {
+  background: #F4F3F1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ArtSTextSec .InnerText .artTextRight .innerTxt {
+  max-width: 540px;
+  margin-left: 120px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 1399px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt {
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+}
+.ArtSTextSec .InnerText .artTextRight .innerTxt .Txt {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  max-width: 536px;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .Txt {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .Txt {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .Txt {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .Txt {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+.ArtSTextSec .InnerText .artTextRight .innerTxt .smText {
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .smText {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextRight .innerTxt .smText {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ArtSTextSec .InnerText .artTextRightt {
+    margin-top: 30px;
+  }
+}
+
+.artTextImgDiv .artStuThreeDiv {
+  background: #F4F3F1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artTextImgDiv .artStuThreeDiv .content {
+  margin-left: 100px;
+  padding-right: 100px;
+}
+@media screen and (max-width: 576px) {
+  .artTextImgDiv .artStuThreeDiv .content {
+    margin-left: 0;
+    padding-right: 0;
+    padding: 20px;
+  }
+}
+.artTextImgDiv .artStuThreeDiv .content p {
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media screen and (max-width: 1399px) {
+  .artTextImgDiv .artStuThreeDiv .content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .artTextImgDiv .artStuThreeDiv .content p {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .artTextImgDiv .artStuThreeDiv .content p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .artTextImgDiv .artStuThreeDiv .content p {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .artTextImgDiv .artStuThreeDiv .content p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+.artTextImgDiv .ArtTxt .imgSec {
+  position: relative;
+}
+@media screen and (max-width: 576px) {
+  .artTextImgDiv .ArtTxt .imgSec .artImg1 {
+    display: none;
+  }
+}
+.artTextImgDiv .ArtTxt .imgSec .artText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1399px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText {
+    left: 40px;
+    right: 40px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText {
+    top: 30px;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText {
+    position: static;
+  }
+}
+.artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .text {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 550px;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .text {
+    font-size: 14px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .text {
+    font-size: 14px;
+    padding: 25px;
+  }
+}
+.artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+@media screen and (max-width: 1600px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 15%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 10%;
+    left: -7%;
+  }
+}
+@media screen and (max-width: 998px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 26%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 876px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 20%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 776px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 20%;
+    left: -2%;
+  }
+}
+@media screen and (max-width: 676px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 5%;
+    left: -6%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .artTextImgDiv .ArtTxt .imgSec .artText .InnerTxt .ThreeDImg {
+    top: 4%;
+    left: 0%;
+    width: 139px;
+  }
+}
+
+.artSFourProjectDiv .ProjectDiv {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .project {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv .project {
+    font-size: 30px;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .Otherproject {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 23px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 117.5%;
+  letter-spacing: 12.19px;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv .Otherproject {
+    font-size: 18px;
+    letter-spacing: 10.19;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject {
+  margin-top: 60px;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv .artSFourProject {
+    margin-top: 40px;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .txt {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 117.5%;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .txt {
+    font-size: 25px;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .smTexts {
+  padding-top: 11px;
+  width: 100%;
+  text-align: center;
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .smTexts .smTxt {
+  color: #000;
+  font-family: Gotham;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #D9D9D9;
+}
+@media screen and (max-width: 576px) {
+  .artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .smTexts .smTxt {
+    font-size: 15px;
+  }
+}
+.artSFourProjectDiv .ProjectDiv .artSFourProject .imgDiv .imgTxt .projectBtn {
+  background: #000;
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 11px 65px;
+  margin-top: 35px;
+}
+
+.artsFourAProDiv {
+  margin-top: 30px;
+  position: relative;
+  padding-top: 57px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 576px) {
+  .artsFourAProDiv {
+    padding-bottom: 60px;
+  }
+}
+.artsFourAProDiv .patch {
+  position: absolute;
+  background-color: #F3F3F5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1200px;
+  z-index: -1;
+}
+.artsFourAProDiv .smImg {
+  padding-top: 40px;
+}
+.artsFourAProDiv .mirrorpaneDiv {
+  padding-left: 50px;
+}
+@media screen and (max-width: 998px) {
+  .artsFourAProDiv .mirrorpaneDiv {
+    margin-top: 40px;
+    padding-left: 0px;
+    padding: 20px;
+  }
+}
+.artsFourAProDiv .mirrorpaneDiv .mirrorTXt {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 117.5%;
+}
+@media screen and (max-width: 576px) {
+  .artsFourAProDiv .mirrorpaneDiv .mirrorTXt {
+    font-size: 25px;
+  }
+}
+.artsFourAProDiv .mirrorpaneDiv .bordertxt {
+  margin-top: 15px;
+}
+.artsFourAProDiv .mirrorpaneDiv .bordertxt .txt {
+  color: #000;
+  font-family: Gotham;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 1px solid #9B9B9B;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.artsFourAProDiv .mirrorpaneDiv .smTxts {
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 40px;
+}
+@media screen and (max-width: 576px) {
+  .artsFourAProDiv .mirrorpaneDiv .smTxts {
+    font-size: 16px;
+  }
+}
+.artsFourAProDiv .mirrorpaneDiv .mirrorBtn {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 11px 60px;
+  background: #000;
+}
+
+.carAcreaPage {
+  margin-top: 30px;
+}
+.carAcreaPage .imgSec {
+  position: relative;
+}
+.carAcreaPage .imgSec .imgText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carAcreaPage .imgSec .imgText .txt {
+  color: #FFF;
+  font-family: "Gotham Medium";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  max-width: 523px;
+}
+@media screen and (max-width: 1099px) {
+  .carAcreaPage .imgSec .imgText .txt {
+    font-size: 39px;
+    max-width: 435px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAcreaPage .imgSec .imgText .txt {
+    font-size: 30px;
+    max-width: 345px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAcreaPage .imgSec .imgText .careerSign {
+    width: 160px;
+  }
+}
+
+.cooperationBlkDiv {
+  margin-top: -90px;
+}
+@media screen and (max-width: 576px) {
+  .cooperationBlkDiv {
+    margin-top: -15px;
+  }
+}
+
+.carAImgTxtDiv {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 998px) {
+  .carAImgTxtDiv {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv {
+    margin-bottom: 40px;
+  }
+}
+.carAImgTxtDiv .CareerTexts {
+  padding-left: 140px;
+  padding-right: 70px;
+}
+@media screen and (max-width: 1199px) {
+  .carAImgTxtDiv .CareerTexts {
+    padding-left: 90px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .carAImgTxtDiv .CareerTexts {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CareerTexts {
+    padding: 30px;
+  }
+}
+.carAImgTxtDiv .CareerTexts .text {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .carAImgTxtDiv .CareerTexts .text {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CareerTexts .text {
+    font-size: 25px;
+  }
+}
+.carAImgTxtDiv .CareerTexts .smText {
+  color: #000;
+  font-family: Gotham;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117.5%;
+  padding-top: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .carAImgTxtDiv .CareerTexts .smText {
+    font-size: 20px;
+  }
+}
+.carAImgTxtDiv .CareerTexts .subTxt {
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 50px;
+}
+@media screen and (max-width: 1600px) {
+  .carAImgTxtDiv .CareerTexts .subTxt {
+    font-size: 15px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .carAImgTxtDiv .CareerTexts .subTxt {
+    padding-top: 30px;
+  }
+}
+.carAImgTxtDiv .CarImg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CarImg .careerIg {
+    display: none;
+  }
+}
+.carAImgTxtDiv .CarImg .carTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1299px) {
+  .carAImgTxtDiv .CarImg .carTxt {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .carAImgTxtDiv .CarImg .carTxt {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CarImg .carTxt {
+    position: static;
+    padding: 30px;
+  }
+}
+.carAImgTxtDiv .CarImg .carTxt .texts .text {
+  color: #FAFAFA;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  max-width: 500px;
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CarImg .carTxt .texts .text {
+    font-size: 18px;
+  }
+}
+.carAImgTxtDiv .CarImg .carTxt .texts .subTxt {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 593px;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1099px) {
+  .carAImgTxtDiv .CarImg .carTxt .texts .subTxt {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CarImg .carTxt .texts .subTxt {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carAImgTxtDiv .CarImg .carTxt .texts .subTxt {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+}
+
+.EmpCorDiv {
+  margin-top: 30px;
+}
+.EmpCorDiv .empCorImg {
+  position: relative;
+}
+.EmpCorDiv .empCorImg .EmpConerText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .EmpCorDiv .empCorImg .EmpConerText {
+    left: 73px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .EmpCorDiv .empCorImg .EmpConerText {
+    left: 45px;
+    right: 28px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .EmpCorDiv .empCorImg .EmpConerText {
+    left: 30px;
+    right: 85px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .EmpCorDiv .empCorImg .EmpConerText {
+    left: 30px;
+    right: 50px;
+  }
+}
+.EmpCorDiv .empCorImg .EmpConerText .empText {
+  color: #FEFEFE;
+  font-family: "Playfair Display";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 519px;
+}
+@media screen and (max-width: 1299px) {
+  .EmpCorDiv .empCorImg .EmpConerText .empText {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .EmpCorDiv .empCorImg .EmpConerText .empText {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .EmpCorDiv .empCorImg .EmpConerText .empText {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+.EmpCorDiv .empcorTxtDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+@media screen and (max-width: 1399px) {
+  .EmpCorDiv .empcorTxtDiv {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .EmpCorDiv .empcorTxtDiv {
+    padding-top: 30px;
+  }
+}
+.EmpCorDiv .empcorTxtDiv .Texts {
+  max-width: 500px;
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media screen and (max-width: 1299px) {
+  .EmpCorDiv .empcorTxtDiv .Texts {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .EmpCorDiv .empcorTxtDiv .Texts {
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .EmpCorDiv .empcorTxtDiv .Texts {
+    max-width: 100%;
+    line-height: 24px;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .EmpCorDiv .empcorTxtDiv .Texts {
+    padding: 30px;
+    font-size: 14px;
+  }
+}
+.EmpCorDiv .empcorTxtDiv .Texts .verEmp {
+  position: absolute;
+  top: 56%;
+  left: -13%;
+  rotate: -90deg;
+  color: #040404;
+  font-family: Gotham;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10.6px;
+}
+@media screen and (max-width: 1399px) {
+  .EmpCorDiv .empcorTxtDiv .Texts .verEmp {
+    left: -17%;
+    top: 53%;
+    letter-spacing: 8.6px;
+  }
+}
+@media screen and (max-width: 1276px) {
+  .EmpCorDiv .empcorTxtDiv .Texts .verEmp {
+    position: static;
+    rotate: 0deg;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+.empCorTableDiv .empTable {
+  padding-top: 55px;
+  padding-bottom: 130px;
+  padding-right: 140px;
+}
+@media screen and (max-width: 1299px) {
+  .empCorTableDiv .empTable {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .empCorTableDiv .empTable {
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .empTable {
+    padding-right: 0px;
+    padding: 30px;
+  }
+}
+.empCorTableDiv .empTable .empValues {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ABABAB;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.empCorTableDiv .empTable .empValues .values .smValue {
+  margin-left: 100px;
+  color: #000;
+  font-family: Gotham;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .empCorTableDiv .empTable .empValues .values .smValue {
+    margin-left: 37px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .empTable .empValues .values .smValue {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+}
+.empCorTableDiv .empTable .value {
+  color: #000;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .empCorTableDiv .empTable .value {
+    font-size: 18px;
+    margin-left: 37px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .empTable .value {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+}
+.empCorTableDiv .empTable .btnn {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #967043;
+  padding: 10px 50px;
+  border: none;
+}
+.empCorTableDiv .bgEmptable {
+  background: #D9D9D9;
+}
+.empCorTableDiv .bgEmptable .empTable {
+  padding-top: 55px;
+  padding-bottom: 130px;
+  padding-right: 140px;
+}
+@media screen and (max-width: 1299px) {
+  .empCorTableDiv .bgEmptable .empTable {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .empCorTableDiv .bgEmptable .empTable {
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .bgEmptable .empTable {
+    padding-right: 0px;
+    padding: 30px;
+  }
+}
+.empCorTableDiv .bgEmptable .empTable .empValues {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ABABAB;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .bgEmptable .empTable .empValues {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.empCorTableDiv .bgEmptable .empTable .values .smValue {
+  margin-left: 100px;
+  color: #000;
+  font-family: Gotham;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .empCorTableDiv .bgEmptable .empTable .values .smValue {
+    margin-left: 37px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .bgEmptable .empTable .values .smValue {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+}
+.empCorTableDiv .bgEmptable .value {
+  color: #000;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .empCorTableDiv .bgEmptable .value {
+    font-size: 18px;
+    margin-left: 37px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .empCorTableDiv .bgEmptable .value {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+}
+.empCorTableDiv .bgEmptable .btnn {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #967043;
+  padding: 10px 50px;
+  border: none;
+}
+
+.contactImgsDiv {
+  margin-top: 30px;
+}
+.contactImgsDiv .conImg {
+  position: relative;
+}
+.contactImgsDiv .conImg .verTxt {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12.6px;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  rotate: -90deg;
+}
+@media screen and (max-width: 1399px) {
+  .contactImgsDiv .conImg .verTxt {
+    left: -63px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contactImgsDiv .conImg .verTxt {
+    left: -63px;
+    display: none;
+  }
+}
+.contactImgsDiv .conImg .ImgDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .contactImgsDiv .conImg .ImgDiv {
+    flex-direction: column;
+    align-items: flex-start;
+    left: 68px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .contactImgsDiv .conImg .ImgDiv {
+    left: 40px;
+  }
+}
+.contactImgsDiv .conImg .ImgDiv .verTxtt {
+  color: #FFF;
+  font-family: Gotham;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12.6px;
+  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .contactImgsDiv .conImg .ImgDiv .verTxtt {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactImgsDiv .conImg .ImgDiv .verTxtt {
+    font-size: 12px;
+  }
+}
+.contactImgsDiv .conImg .conTxt {
+  color: #FFF;
+  font-family: "Gotham Medium";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  max-width: 499px;
+}
+@media screen and (max-width: 1399px) {
+  .contactImgsDiv .conImg .conTxt {
+    font-size: 40px;
+    padding-top: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactImgsDiv .conImg .conTxt {
+    font-size: 35px;
+    line-height: 43px;
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .contactImgsDiv .conImg .conTxt {
+    font-size: 27px;
+  }
+}
+
+.contactTxtDiv {
+  background: rgba(237, 238, 240, 0.6);
+  margin-top: -220px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1099px) {
+  .contactTxtDiv {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactTxtDiv {
+    margin-bottom: 60px;
+  }
+}
+.contactTxtDiv .conTexts {
+  padding-top: 70px;
+}
+@media screen and (max-width: 1099px) {
+  .contactTxtDiv .conTexts {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactTxtDiv .conTexts {
+    padding-top: 40px;
+  }
+}
+.contactTxtDiv .conTexts .TextsDiv {
+  border-bottom: 2px solid #858585;
+  margin-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1099px) {
+  .contactTxtDiv .conTexts .TextsDiv {
+    margin-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .contactTxtDiv .conTexts .TextsDiv {
+    margin-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 30px;
+  }
+}
+.contactTxtDiv .conTexts .TextsDiv .Text {
+  color: #000;
+  font-family: "Gotham Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+@media screen and (max-width: 576px) {
+  .contactTxtDiv .conTexts .TextsDiv .Text {
+    font-size: 14px;
+  }
+}
+.contactTxtDiv .conTexts .TextsDiv .smTxt {
+  color: #000;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 325;
+  line-height: 26px;
+  padding-top: 8px;
+}
+@media screen and (max-width: 1099px) {
+  .contactTxtDiv .conTexts .TextsDiv .smTxt {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactTxtDiv .conTexts .TextsDiv .smTxt {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style1.css.map */

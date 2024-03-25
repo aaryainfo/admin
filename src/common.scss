@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("/Fonts/Gotham Medium/Gotham Medium.otf");
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/Fonts/GothamLight.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/Fonts/PlayfairDisplay-Medium.ttf");
+}
+@font-face {
+    font-family: "Playfair Display semi";
+    src: url("/Fonts/PlayfairDisplay-semiBold.ttf");
+}
+
+
+.sqImg {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.ReadysqImg {
+    aspect-ratio: 0.8;
+    object-fit: cover;
+}
+
+.artTImg{
+    aspect-ratio: 1.37;
+    object-fit: cover;
+}
+
+.artImgg {
+    aspect-ratio: 0.7;
+    object-fit: cover;
+}
+
+.textDecor{
+    text-decoration: none;
+}

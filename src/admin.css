@@ -1,0 +1,1311 @@
+.adminLoginPage {
+  background: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adminLoginPage .adminLoginDiv {
+  width: 500px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+}
+.adminLoginPage .adminLoginDiv .heading {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+.adminLoginPage .adminLoginDiv .inBox {
+  margin-top: 15px;
+}
+.adminLoginPage .adminLoginDiv .inBox .tit {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.adminLoginPage .adminLoginDiv .inBox .inText {
+  width: 100%;
+  border: 1px solid #9b9b9b;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.adminLoginPage .adminLoginDiv .loginbtn {
+  display: block;
+  margin-top: 25px;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: white;
+  background: #415fff;
+  outline: none;
+  border: 0px solid #415fff;
+  transition: all 0.3s;
+}
+.adminLoginPage .adminLoginDiv .loginbtn:hover {
+  box-shadow: 100px 0px 0px black inset, -100px 0px 0px black inset;
+}
+
+.req {
+  color: red;
+}
+
+.AdminDashMain {
+  height: 100vh;
+}
+.AdminDashMain .AdHeadr {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #415fff;
+}
+.AdminDashMain .AdHeadr .logoTog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.AdminDashMain .AdHeadr .logoTog img {
+  margin: 17px 0px;
+}
+.AdminDashMain .AdHeadr .logoTog .adTogler {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.AdminDashMain .AdHeadr .logoTog .adTogler svg {
+  font-size: 24px;
+  color: white;
+}
+.AdminDashMain .AdHeadr .userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.AdminDashMain .AdHeadr .userInfo .userin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+.AdminDashMain .AdHeadr .userInfo .userin svg {
+  color: white;
+  font-size: 22px;
+}
+.AdminDashMain .AdHeadr .userInfo .userin .name {
+  color: white;
+  font-size: 20px;
+}
+.AdminDashMain .AdHeadr .userInfo .logoutBtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+.AdminDashMain .AdContent {
+  height: calc(100vh - 85px);
+  padding-left: 300px;
+}
+.AdminDashMain .AdContent .adSidebar {
+  width: 300px;
+  position: fixed;
+  top: 85px;
+  left: 0px;
+  bottom: 0px;
+  background: #f5f5f5;
+  padding: 10px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header .catIcons {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header button {
+  box-shadow: none;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header button:hover {
+  background: #415fff;
+  color: white;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header button:hover::after {
+  filter: brightness(0) invert(1);
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header button[aria-expanded=true] {
+  background: #415fff;
+  color: white;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-header button[aria-expanded=true]::after {
+  filter: brightness(0) invert(1);
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body {
+  padding: 15px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul li {
+  margin-top: 10px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul li:first-child {
+  margin-top: 0px;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  transition: all 0.3s;
+  display: block;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul li a.active {
+  color: #415fff;
+}
+.AdminDashMain .AdContent .adSidebar .inner .customAcco .accordion-item .accordion-collapse .accordion-body ul li a:hover {
+  color: #415fff;
+}
+.AdminDashMain .AdContent .adSidebar .inner .sideLinks .siLink {
+  background: white;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.AdminDashMain .AdContent .adSidebar .inner .sideLinks .siLink:hover {
+  background: #415fff;
+  color: white;
+}
+.AdminDashMain .AdContent .adSidebar .inner .sideLinks .siLink .catIcons {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.AdminDashMain .AdContent .adRightContent {
+  padding: 20px;
+  height: calc(100vh - 85px);
+  overflow-y: scroll;
+}
+.AdminDashMain .AdContent .adRightContent .pathSec {
+  position: relative;
+}
+.AdminDashMain .AdContent .adRightContent .pathSec .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.AdminDashMain .AdContent .adRightContent .pathSec .path {
+  color: black;
+  font-weight: 500;
+}
+.AdminDashMain .AdContent .adRightContent .pathSec .path span {
+  color: #415fff;
+}
+.AdminDashMain .AdContent .adRightContent .pathSec .addBtn {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #415fff;
+  border: 1px solid #415fff;
+  transition: all 0.4s;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.AdminDashMain .AdContent .adRightContent .pathSec .addBtn:hover {
+  color: #415fff;
+  background: transparent;
+}
+.AdminDashMain .AdContent .adRightContent .hello {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 42px;
+}
+.AdminDashMain .AdContent .adRightContent .taglist {
+  margin-top: 30px;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable {
+  width: 100%;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable thead tr {
+  background: #f5f5f5;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable thead tr td {
+  padding: 10px;
+  font-weight: 600;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody tr td {
+  padding: 10px;
+  font-weight: 500;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .isAct {
+  border-radius: 2px;
+  background: rgb(99, 192, 99);
+  color: white;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .isNotAct {
+  border-radius: 2px;
+  background: rgb(255, 119, 119);
+  color: white;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .actions button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .actions button.EditIcobtn {
+  background: rgb(90, 142, 255);
+}
+.AdminDashMain .AdContent .adRightContent .taglist .taglistTable tbody .actions button.EditDltbtn {
+  background: rgb(255, 103, 57);
+}
+.AdminDashMain .AdContent .adRightContent .formDiv {
+  margin-top: 30px;
+  padding: 15px;
+  box-shadow: 0px 5px 10px rgb(218, 218, 218);
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .formTitle {
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox {
+  margin-top: 10px;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .inTitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .inText {
+  width: 400px;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: black;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .inTextarea {
+  width: 100%;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: black;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .inSelect {
+  width: 400px;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("/images/selectArr.svg");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 50%;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .inCheck {
+  width: 18px;
+  height: 18px;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .inBox .catImgPrev {
+  width: 200px;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .formBtns {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .formBtns button {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #415fff;
+  border: 1px solid #415fff;
+  transition: all 0.4s;
+  color: white;
+  font-size: 16px;
+}
+.AdminDashMain .AdContent .adRightContent .formDiv .form .formBtns button:hover {
+  color: #415fff;
+  background: transparent;
+}
+
+.reactPaginate {
+  margin-top: 30px;
+}
+.reactPaginate ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.reactPaginate ul li {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+.reactPaginate ul li a {
+  padding: 0px 10px;
+  font-weight: 500;
+}
+.reactPaginate ul li.selected {
+  background: #415fff;
+  color: rgb(255, 255, 255);
+}
+.reactPaginate ul li.previous, .reactPaginate ul li.next {
+  width: auto;
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+.reactPaginate ul li.previous a, .reactPaginate ul li.next a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+.reactPaginate ul li.disabled {
+  opacity: 0.5;
+}
+
+.proDuctVarientsMain {
+  margin-top: 20px;
+}
+.proDuctVarientsMain .titBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.proDuctVarientsMain .titBtn .tit {
+  font-weight: 500;
+  font-size: 22px;
+}
+.proDuctVarientsMain .titBtn button {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #415fff;
+  border: 1px solid #415fff;
+  transition: all 0.4s;
+  color: white;
+  font-size: 16px;
+}
+.proDuctVarientsMain .titBtn button:hover {
+  color: #415fff;
+  background: transparent;
+}
+
+.catsTags .catSec {
+  margin-bottom: 20px;
+}
+.catsTags .catSec .cattitle {
+  font-size: 22px;
+  font-weight: 500;
+}
+.catsTags .catSec .CatUl {
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.catsTags .catSec .CatUl .CatLi {
+  list-style: none;
+  margin-bottom: 0px;
+}
+.catsTags .catSec .CatUl .catElem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.catsTags .catSec .CatUl .catElem input {
+  width: 16px;
+  height: 16px;
+  accent-color: #415fff;
+}
+
+.varientModalMain {
+  background: #f5f5f5;
+  margin-top: 20px;
+  padding: 15px;
+}
+.varientModalMain .closeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.varientModalMain .closeDiv button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.varientModalMain .vformDiv .vformTitle {
+  font-size: 22px;
+  font-weight: 500;
+}
+.varientModalMain .vformDiv .form .inBox {
+  margin-top: 10px;
+}
+.varientModalMain .vformDiv .form .inBox .intitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.varientModalMain .vformDiv .form .inBox input {
+  width: 100%;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+}
+.varientModalMain .vimgesDiv {
+  margin-top: 10px;
+}
+.varientModalMain .vimgesDiv .elem {
+  margin-top: 20px;
+}
+.varientModalMain .btnsDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.varientModalMain .btnsDiv button {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #415fff;
+  border: 1px solid #415fff;
+  transition: all 0.4s;
+  color: white;
+  font-size: 16px;
+}
+.varientModalMain .btnsDiv button:hover {
+  color: #415fff;
+  background: transparent;
+}
+
+.varientListDiv {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+}
+.varientListDiv .vatTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+.varientListDiv .vListElem {
+  margin-top: 15px;
+  background: #e5e5e5;
+  padding: 10px;
+}
+.varientListDiv .vListElem .filedBox .titField {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.heighLights {
+  margin-top: 20px;
+}
+.heighLights .head {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.heighLights .heiList {
+  margin-top: 15px;
+}
+.heighLights .inField .titleFi {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.heighLights .inField .inWrapperr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.heighLights .inField .inWrapperr .heInput {
+  width: 100%;
+  flex: 1;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+}
+.heighLights .inField .inWrapperr button {
+  background: #415fff;
+  outline: none;
+  padding: 5px 20px;
+  color: black;
+  border: none;
+  color: white;
+}
+
+.productOffers {
+  padding: 30px;
+}
+.productOffers .head {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.productOffers .offersAndTermsWrapper {
+  background-color: #fff;
+  border: 2px solid #E1E1E1;
+  padding: 10px;
+}
+.productOffers .offersAndTermsWrapper .enterOffers .inBoxKey .keyTit {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.productOffers .offersAndTermsWrapper .enterOffers .inBoxKey input {
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+  width: 100%;
+}
+.productOffers .offersAndTermsWrapper .enterTC {
+  margin-top: 20px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .titleFi {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .inWrapperr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .inWrapperr .heInput {
+  width: 100%;
+  flex: 1;
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .inWrapperr button {
+  background: #415fff;
+  outline: none;
+  padding: 5px 20px;
+  color: black;
+  border: none;
+  color: white;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .tc-list {
+  margin-top: 20px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .tc-list ul li {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid #D1D1D1;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .tc-list ul li .number {
+  padding-right: 7px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .tc-list ul li .listItem {
+  flex: 1;
+}
+.productOffers .offersAndTermsWrapper .enterTC .inField .tc-list ul li .croosIcon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 15px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .addoffersBtn {
+  margin-top: 40px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .addoffersBtn button {
+  background: #415fff;
+  outline: none;
+  padding: 5px 20px;
+  color: black;
+  border: none;
+  color: white;
+  margin-right: 15px;
+}
+.productOffers .offersAndTermsWrapper .enterTC .addoffersBtn .removeBtn {
+  background-color: red;
+}
+
+.speciAddDiv {
+  margin-top: 20px;
+}
+.speciAddDiv .SpeciAddBtn {
+  padding: 5px 20px;
+  font-size: 18px;
+  color: white;
+  background: #415fff;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+.speciAddDiv .head {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.speciAddDiv .speciInBox {
+  background: white;
+  padding: 10px;
+}
+.speciAddDiv .speciInBox .spHead {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.speciAddDiv .speciInBox .heading {
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+  width: 100%;
+}
+.speciAddDiv .speciInBox .KeyValIn {
+  margin-top: 10px;
+}
+.speciAddDiv .speciInBox .KeyValIn .inBoxKey .keyTit {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.speciAddDiv .speciInBox .KeyValIn .inBoxKey input {
+  border: 1px solid #415fff;
+  outline: none;
+  padding: 5px 10px;
+  color: black;
+  width: 100%;
+}
+.speciAddDiv .speciInBox .KeyValIn .keyValAddBtb {
+  padding: 5px 20px;
+  background: #415fff;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+}
+.speciAddDiv .speciInBox .valuesList {
+  margin-top: 15px;
+}
+.speciAddDiv .SpeciListAll {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 10px;
+}
+.speciAddDiv .SpeciListAll .speciElem {
+  margin: 10px 5px;
+}
+.speciAddDiv .SpeciListAll .speciElem .hed {
+  font-size: 20px;
+}
+
+.imgsDDiv {
+  margin-top: 15px;
+}
+.imgsDDiv .headi {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.imgsDDiv .imgs {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.imgsDDiv .imgs .imgWrapper {
+  position: relative;
+}
+.imgsDDiv .imgs .imgWrapper img {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.imgsDDiv .imgs .imgWrapper button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #415fff;
+  color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  border: none;
+}
+
+.addVarBtnwrap {
+  margin-top: 20px;
+}
+.addVarBtnwrap button {
+  border: none;
+  outline: none;
+  background: #415fff;
+  color: white;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+.addVarBtnwrap3 {
+  margin: 20px;
+}
+.addVarBtnwrap3 button {
+  border: none;
+  outline: none;
+  background: #415fff;
+  color: white;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+.vivoVarList {
+  margin-top: 20px;
+  padding: 10px;
+}
+.vivoVarList .helist {
+  font-size: 20px;
+}
+.vivoVarList .varitem {
+  background: #f5f5f5;
+  padding: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.vivoVarList .varitem .dlt {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 3px 6px;
+  background: red;
+  color: white;
+  border: none;
+  outline: none;
+}
+.vivoVarList .varitem .edit {
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  padding: 3px 6px;
+  background: rgb(37, 69, 255);
+  color: white;
+  border: none;
+  outline: none;
+}
+.vivoVarList .varitem .termsCondition {
+  position: absolute;
+  top: 0px;
+  right: 130px;
+  padding: 3px 6px;
+  background: #00C8FF;
+  color: white;
+  border: none;
+  outline: none;
+}
+.vivoVarList .varitem .itembox .title {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.vivoVarList .varitem .itembox .val {
+  font-size: 15px;
+}
+
+.allOrdersMainAdmin {
+  margin-top: 20px;
+}
+.allOrdersMainAdmin .allOrdersBox {
+  margin-top: 15px;
+  background: #e1e9ff;
+  padding: 15px 20px;
+}
+.allOrdersMainAdmin .allOrdersBox .IdPlaceItems {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D1D1D1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+@media screen and (max-width: 500px) {
+  .allOrdersMainAdmin .allOrdersBox .IdPlaceItems {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    row-gap: 10px;
+  }
+}
+.allOrdersMainAdmin .allOrdersBox .IdPlaceItems span {
+  font-weight: 700;
+}
+.allOrdersMainAdmin .allOrdersBox .productList {
+  margin-top: 30px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product {
+  margin-bottom: 30px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .name {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .desc {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .sizeQty {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .sizeQty .size,
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .sizeQty .qty {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .sizeQty .size span,
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .sizeQty .qty span {
+  font-weight: 700;
+}
+.allOrdersMainAdmin .allOrdersBox .productList .product .productDetail .mrp {
+  margin-top: 7px;
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian {
+  background: none;
+  border: none;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-header button {
+  padding: 10px 0px;
+  border: none;
+  border-top: 1px solid #D1D1D1;
+  border-bottom: 1px solid #D1D1D1;
+  background: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-header button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    row-gap: 10px;
+  }
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-header button .deliveryStatus {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-header button .deliveryStatus span {
+  color: #415fff;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-header button .deleveryInformation {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-body {
+  padding: 20px 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-body .deliveredTo {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-body .deleverdToName {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+.allOrdersMainAdmin .allOrdersBox .customAccordian .accordion-body .deliveredAddress {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+}
+.allOrdersMainAdmin .allOrdersBox .totalAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+@media screen and (max-width: 500px) {
+  .allOrdersMainAdmin .allOrdersBox .totalAmount {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.allOrdersMainAdmin .allOrdersBox .totalAmount .amount {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+.allOrdersMainAdmin .allOrdersBox .totalAmount .amount span {
+  color: #415fff;
+}
+.allOrdersMainAdmin .allOrdersBox .totalAmount .invoiceBtn {
+  border: 1px solid #415fff;
+  padding: 9px 33px;
+  background: none;
+  color: #415fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media screen and (max-width: 500px) {
+  .allOrdersMainAdmin .allOrdersBox .totalAmount .invoiceBtn {
+    width: 100%;
+  }
+}
+.allOrdersMainAdmin .allOrdersBox .modal .modal-body {
+  padding-top: 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .modal-header {
+  border-bottom: 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .modal-header .modal-title {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .productList {
+  border-top: 1px solid #D1D1D1;
+  padding-top: 18px;
+  margin-top: 0px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .productList .product {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .productList .product .name {
+  width: 70%;
+  overflow-x: hidden;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .productList .product .name span {
+  font-style: normal;
+  font-weight: 700;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .productList .product .amount {
+  width: 30%;
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .discountDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11px;
+  border-top: 1px solid #D1D1D1;
+  padding-bottom: 15px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .discountDiv .discount {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .discountDiv .discount span {
+  font-style: normal;
+  font-weight: 700;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .discountDiv .amount {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .paymentMethod {
+  padding-top: 11px;
+  border-top: 1px solid #D1D1D1;
+  color: black;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .paymentMethod span {
+  font-style: normal;
+  font-weight: 700;
+}
+.allOrdersMainAdmin .allOrdersBox .modal .downloadInvoice {
+  margin-top: 20px;
+  border: 1px solid #415fff;
+  padding: 9px 15px;
+  color: #415fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  background: none;
+}
+
+.marketingImages {
+  margin-top: 20px;
+}
+.marketingImages .title {
+  font-size: 20px;
+}
+.marketingImages .imgBox {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.marketingImages .imgBox .wrapper {
+  position: relative;
+}
+.marketingImages .imgBox .wrapper img {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.marketingImages .imgBox .wrapper .dlt {
+  background: red;
+  color: white;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.proIntroSec {
+  margin-top: 20px;
+}
+.proIntroSec .productNae {
+  font-size: 22px;
+  font-weight: 500;
+}
+.proIntroSec .linkedProductList {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.proIntroSec .linkedProductList .proElem {
+  background: white;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgb(204, 204, 204);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  row-gap: 4px;
+}
+.proIntroSec .linkedProductList .proElem .proImg {
+  width: 80px;
+}
+.proIntroSec .linkedProductList .proElem .proName {
+  text-align: center;
+  font-size: 18px;
+}
+.proIntroSec .linkedProductList .proElem .colName {
+  text-align: center;
+  font-size: 16px;
+}
+.proIntroSec .linkedProductList .proElem .dltBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background: rgb(255, 68, 68);
+  color: white;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.chsProduct {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.statusUpdate .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.statusUpdate select {
+  width: 200px;
+  border: 1px solid #415fff;
+  padding: 5px 10px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.imgBtn {
+  padding: 5px 12px;
+  background: #c5c5c5;
+  border: 1px solid #666666;
+  transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.pdfDiv .viewPdfBtn {
+  text-decoration: none;
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #415fff;
+  border: 1px solid #415fff;
+  transition: all 0.4s;
+  color: white;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+.pdfDiv .viewPdfBtn:hover {
+  color: #415fff;
+  background: transparent;
+}/*# sourceMappingURL=admin.css.map */

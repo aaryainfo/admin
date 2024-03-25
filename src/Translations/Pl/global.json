@@ -1,0 +1,54 @@
+{
+    "home" : {
+      "heroHeading" : "SYNERGIA I TECHNOLOGIA",
+      "heroSubHeading" : "Witamy w DagadArt, wciągającym płótnie, na którym synergia sztuki i technologii maluje żywy gobelin",
+      "heroPtOne" : "ZOBACZ NASZE PRODUKTY",
+      "heroPtTwo" : "STUDIO SZTUKI",
+      "heroVerText" : "WITAJ W DAGADART",
+      "heroCall" :"ZADZWOŃ+00 000 0000",
+      "heroSocialmedia":"MEDIA SPOŁECZNOŚCIOWE",
+      "heroContact":"KONTAKT DAGADART@DAGADART.COM",
+
+      "joinUsHeadOne": "Dołącz do nas w odkrywaniu zbieżności artyzmu i inżynierii, gdzie każde dzieło ucieleśnia ducha naszych czasów.",
+      "joinUsHeadTwoTxt":"Nasza podróż rozpoczęła się w październiku 1991 roku, kiedy nasz główny twórca rzeźb i pomysłodawca rozpoczęli twórczą odyseję w zakresie renowacji i rzeźbienia nagrobków.",
+      "joinHeadTwoSubtxt":"Pionierska innowacja, w 1994 roku wprowadziliśmy do Polski nasz pierwszy indywidualny nagrobek, potwierdzając ideę naszego rzemiosła.",
+      "JoinusBtn" :"CZYTAJ WIĘCEJ",
+      "joinusVerTxt":"O DAGADARCIE",
+      
+      "readyProTxt" : "GOTOWE PROJEKTY",
+
+      "stoneBlkOne":"NAGROBY I POMNIKI",
+      "stoneBlkTwo":"RZEŹBY I UNIKATOWE PRODUKTY",
+      "stoneBlkThree":"KAMIENIE-BLOKI PŁYTY KAMIENNE",
+      "stoneBlkFour":"WYROBY Z KAMIENIA",
+
+      "journeyHrTxt":"STUDIO SZTUCZNE DAGAD",
+      "JourneyTxt":"WYrusz w podróż",
+      "JonSubtxtOne":"INNOWACYJNE PROJEKTOWANIE, RZEŹBOWANIE I ARTYSTYKA 3D",
+      "JonSubtxtTwo":"ZAAWANSOWANE PROTOTYPOWANIE I PRODUKCJA: INTEGRACJA ARTYSTYKI Z DRUKOWANIEM I SKANOWANIEM 3D",
+      "JonSubtxtThree":"PRZESTRZEŃ SZTUKI DLA ARTYSTÓW",
+
+      "careerMainTXt":"WSPÓŁPRACA I KARIERA",
+      "careerSmtxtOne":"PRACA, STUDIA LUB STAŻE",
+      "careerSmtxtTwo":"KAMIEŃ, DOSTAWCY SUROWCÓW, WSPÓŁPRACA PRODUKCYJNA",
+      "careerSmtxtThree":"PODNAJEM STUDIA, PRODUKCJA TWOICH PROJEKTÓW",
+
+      "globalMapTxt":"Jesteśmy globalni",
+      "globalMapsubTxt":"Jesteśmy obecni w Czechach (Cesky Tesin i Praga), Polsce (Bielsko-Biała) i Indiach (Pune). Gdziekolwiek jesteś, DagadArt jest gotowy na porzucenie połączeń i odkrycie nieograniczonych możliwości współpracy artystycznej i innowacji. Skontaktuj się z nami, aby wcielić w życie Twoją twórczą wizję",
+      "globalMapBtn":"POŁĄCZ SIĘ Z DAGADARTEM",
+
+      "FooterTxt":"Wyrusz we wspólną podróż z DagadArt",
+      "FootCountryPL":"PL",
+      "FootCountryCZ":"CZ",
+      "FootCountryIN":"IN",
+      "FooterSubTxt":"Lorem Ipsum to po prostu fikcyjny tekst branży poligraficznej. Lorem Ipsum jest produktem w branży",
+      "footerName":"NAZWA",
+      "footerSubject":"TEMAT",
+      "footerEmail":"E-MAIL",
+      "footerMsg":"WIADOMOŚĆ",
+      "footerSend":"WYSŁAĆ"
+      
+    }
+    
+    
+  }

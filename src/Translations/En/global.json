@@ -1,0 +1,62 @@
+{
+    "home" : {
+      
+      "heroHeading" : "SYNERGY Of AND TECHNOLOGY",
+      "heroSubHeading" : "Welcome to DagadArt an immersive canvas where the synergy of art and technology paints a vibrant tapestry",
+      "heroPtOne" : "SEE OUR PRODUCTS",
+      "heroPtTwo" : "ART STUDIO",
+      "heroVerText" : "WELCOME IN DAGADART",
+      "heroCall" :"CALL+00 000 0000",
+      "heroSocialmedia":"SOCIAL MEDIA",
+      "heroContact":"CONTACT DAGADART@DAGADART.COM",
+
+    
+      "joinUsHeadOne": "Join us in exploring the convergence of artistry and engineering, where each creation embodies the sprit of our times.",
+      "joinUsHeadTwoTxt":"Our journey commenced in October 1991 when our main sculptures and originator embarked on a creative odyssey in tombstone renovation and sculpting.",
+      "joinHeadTwoSubtxt":"Pioneering innovation, we introduced our first individual tombstone in poland in 1994,proving the idea of our craftsmanship.",
+      "JoinusBtn" :"READ MORE",
+      "joinusVerTxt":"ABOUT DAGADART",
+      
+      "readyProTxt" : "READY PROJECTS",
+
+      "stoneBlkOne":"TOMBSTONES AND MONUMENTS",
+      "stoneBlkTwo":"SCULPTURES AND UNIQUE PRODUCTS",
+      "stoneBlkThree":"STONE- BLOCKS STONE SLABS",
+      "stoneBlkFour":"STONE PRODUCTS",
+
+      "journeyHrTxt":"DAGAD ART STUDIO",
+      "JourneyTxt":"EMBARK ON AN JOURNEY",
+      "JonSubtxtOne":"INNOVATIVE DESIGN, SCULPTING, AND 3D ARTISTRY",
+      "JonSubtxtTwo":"ADVANCED PROTOTYPING AND MANUFACTURING: INTEGRATING ARTISTRY WITH 3D PRINTING AND SCANNING",
+      "JonSubtxtThree":"ART SPACE FOR ARTISTS",
+
+      "careerMainTXt":"COOPERATION AND CAREER",
+      "careerSmtxtOne":"EMPLOYMENT, STUDIES OR INTERNSHIPS",
+      "careerSmtxtTwo":"STONE, RAW MATERIAL SUPPLIERS, MANUFACTURING COOPERATION",
+      "careerSmtxtThree":"STUDIO SUBLETTING, MANUFACTURING OF YOUR PROJECTS",
+
+      "globalMapTxt":"We are global",
+      "globalMapsubTxt":[
+        {
+          "globalMapsubTxt1":"We are Present in the Czech Republic (cesky tesin and Prague), Poland (Bielsko-Biala), and India (Pune).",
+          "globalMapsubTxt2":"Wherever you are, DagadArt is Ready to Foreg Connections and Explore the Endless Possiblities of Artistic Collaboration and Innovation, Contact Us to Bring Your Creative Vision to Life"
+        }
+        ],
+      "globalMapBtn":"CONNECT WITH DAGADART",
+
+      "FooterTxt":"Embark on a Collaborative Journey with DagadArt",
+      "FootCountryPL":"PL",
+      "FootCountryCZ":"CZ",
+      "FootCountryIN":"IN",
+      "FooterSubTxt":"Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's",
+      "footerName":"NAME",
+      "footerSubject":"SUBJECT",
+      "footerEmail":"E-MAIL",
+      "footerMsg":"MESSAGE",
+      "footerSend":"SEND"
+
+
+
+    }
+    
+  }

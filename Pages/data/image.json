@@ -1,0 +1,29 @@
+
+{
+    "data":[
+        {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg1.webp"
+        },
+        {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg2.webp"
+        },
+        {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg3.webp"
+        } ,
+         {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg4.webp"
+        },
+        {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg5.webp"
+        }, {
+            "text": "This is the description of image1",
+            "link":"/Images/galleryImg6.webp"
+        }
+        
+    ]
+}

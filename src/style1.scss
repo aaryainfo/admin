@@ -1,0 +1,1433 @@
+.artStudioPage {
+    margin-top: 30px;
+
+    .imgDiv {
+        position: relative;
+
+        .mainText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            @media screen and (max-width:576px) {
+                left: 50px;
+                top: 30px;
+            }
+
+            .horiText {
+                color: #FFF;
+                font-family: Gotham;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 12.6px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 12px;
+                    letter-spacing: 7.6px;
+                }
+            }
+
+            .imgText {
+                color: #FFF;
+                font-family: "Gotham Medium";
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                max-width: 426px;
+                padding-top: 40px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 35px;
+                    padding-top: 30px;
+                }
+            }
+
+            // .imgg{
+            //     width: 215px;
+            // }
+        }
+
+    }
+}
+
+
+.artStudioStoneBlk {
+    margin-top: -110px;
+
+    @media screen and (max-width:576px) {
+        margin-top: 0px;
+    }
+}
+
+.ArtSTextSec {
+    .InnerText {
+        margin-top: 80px;
+
+        @media screen and (max-width:576px) {
+            margin-top: 40px;
+        }
+
+        .artTextDiv {
+            position: relative;
+
+            .DagadArtText {
+                position: absolute;
+                rotate: -90deg;
+                top: 100px;
+                left: -10px;
+                color: #000;
+                font-family: Gotham;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 12.06px;
+
+                @media screen and (max-width:1199px) {
+                    left: -30px;
+                }
+
+                @media screen and (max-width:576px) {
+                    position: static;
+                    rotate: 0deg;
+                    padding-left: 30px;
+                }
+
+                &.verTxt {
+                    @media screen and (max-width:1299px) {
+                        left: -50px;
+                    }
+
+                }
+            }
+
+            .ArtText {
+                margin-left: 170px;
+                // padding-top: 100px;
+                max-width: 539px;
+                padding-bottom: 70px;
+
+                &.artsThreeTxt {
+                    @media screen and (max-width:1599px) {
+                        padding-bottom: 0;
+
+                    }
+
+                    @media screen and (max-width:1299px) {
+                        margin-left: 80px;
+                    }
+
+                    @media screen and (max-width:998px) {
+                        padding-bottom: 30px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        margin-left: 0px;
+                    }
+
+                    .txt {
+                        color: #000;
+                        font-family: "Gotham Medium";
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 0%;
+
+                        @media screen and (max-width:1600px) {
+                            font-size: 30px;
+                        }
+
+                        @media screen and (max-width:1199px) {
+                            font-size: 25px;
+                        }
+
+                    }
+
+                    .smTxt {
+                        font-size: 34px;
+                        padding-top: 50px;
+
+                        @media screen and (max-width:1600px) {
+                            font-size: 30px;
+                            padding-top: 40px;
+                        }
+
+                        @media screen and (max-width:1499px) {
+                            font-size: 25px;
+                        }
+
+                        @media screen and (max-width:1199px) {
+                            font-size: 20px;
+                            padding-top: 20px;
+                            line-height: 33px;
+                        }
+
+                        @media screen and (max-width:576px) {
+                            font-size: 15px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width:1399px) {
+                    margin-left: 130px;
+                }
+
+                @media screen and (max-width:576px) {
+                    margin-left: 0px;
+                    padding: 30px;
+
+                }
+
+                .txt {
+                    color: #000;
+                    font-family: "Gotham Medium";
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+
+                    @media screen and (max-width:1600px) {
+                        font-size: 32px;
+                    }
+
+                    @media screen and (max-width:1399px) {
+                        font-size: 32px;
+                    }
+
+                    @media screen and (max-width:1099px) {
+                        font-size: 29px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 25px;
+                    }
+                }
+
+                .middleTxt {
+                    color: #000;
+                    font-family: Gotham;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 110%;
+                    padding-top: 30px;
+                }
+
+                .smTxt {
+                    color: #000;
+                    font-family: "Playfair Display";
+                    font-size: 34px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 42px;
+                    padding-top: 35px;
+
+                    @media screen and (max-width:1600px) {
+                        font-size: 18px;
+                        padding-top: 25px;
+                    }
+
+                    @media screen and (max-width:1399px) {
+                        font-size: 28px;
+                    }
+
+                    @media screen and (max-width:1099px) {
+                        font-size: 25px;
+                    }
+
+                    @media screen and (max-width:776px) {
+                        font-size: 22px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 15px;
+                        padding-top: 15px;
+                        line-height: 32px;
+                    }
+                }
+
+            }
+        }
+
+        .artTextRight {
+            background: #F4F3F1;
+            // padding-top: 120px;
+            // padding-left: 140px;
+            // padding-bottom: 140px;
+            // padding-right: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .innerTxt {
+                max-width: 540px;
+                margin-left: 120px;
+                margin-right: 50px;
+
+                @media screen and (max-width:1399px) {
+                    margin-left: 90px
+                }
+
+                @media screen and (max-width:998px) {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    max-width: 100%;
+                    margin-left: 30px;
+                    margin-right: 40px;
+                }
+
+                .Txt {
+                    color: #000;
+                    font-family: "Playfair Display";
+                    font-size: 34px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 42px;
+                    max-width: 536px;
+
+                    @media screen and (max-width:1600px) {
+                        font-size: 28px;
+                    }
+
+                    @media screen and (max-width:1099px) {
+                        font-size: 30px;
+                    }
+
+                    @media screen and (max-width:998px) {
+                        max-width: 100%;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                }
+
+                .smText {
+                    color: #000;
+                    font-family: Gotham;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    padding-top: 30px;
+
+                    @media screen and (max-width:1600px) {
+                        font-size: 14px;
+                        padding-top: 20px;
+
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 14px;
+                        padding-top: 16px;
+
+                    }
+                }
+            }
+
+        }
+
+        .artTextRightt {
+            @media screen and (max-width:576px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+}
+
+.artTextImgDiv {
+
+    .artStuThreeDiv {
+        background: #F4F3F1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            margin-left: 100px;
+            padding-right: 100px;
+
+            @media screen and (max-width:576px) {
+                margin-left: 0;
+                padding-right: 0;
+                padding: 20px;
+            }
+
+            p {
+                color: #000;
+                font-family: Gotham;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+
+                @media screen and (max-width:1399px) {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                @media screen and (max-width:1199px) {
+                    font-size: 13px;
+                    line-height: 14px;
+                }
+
+                @media screen and (max-width:1099px) {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                @media screen and (max-width:998px) {
+                    font-size: 15px;
+                    line-height: 20px;
+                    padding: 10px;
+                }
+
+                @media screen and (max-width:998px) {
+                    font-size: 14px;
+                    line-height: 15px;
+                }
+
+
+            }
+
+        }
+    }
+
+    .ArtTxt {
+        .imgSec {
+            position: relative;
+
+            // @media screen and (max-width:576px) {
+            //     background-image: url("/Images/ArtTmainImg1 .webp");
+            // }
+
+            .artImg1 {
+
+                @media screen and (max-width:576px) {
+                    display: none;
+                }
+            }
+
+            .artText {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (max-width:1399px) {
+                    left: 40px;
+                    right: 40px;
+                }
+
+                @media screen and (max-width:776px) {
+                    top: 30px;
+                    bottom: 20px;
+                }
+
+                @media screen and (max-width:576px) {
+                    position: static;
+                }
+
+                .InnerTxt {
+                    .text {
+                        color: #FFF;
+                        font-family: Gotham;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        max-width: 550px;
+                        position: relative;
+                        z-index: 1;
+
+                        @media screen and (max-width:998px) {
+                            // font-size: 14px;
+                        }
+
+                        @media screen and (max-width:576px) {
+                            font-size: 14px;
+                            padding: 30px;
+                        }
+
+                        @media screen and (max-width:376px) {
+                            font-size: 14px;
+                            padding: 25px;
+                        }
+                    }
+
+                    .ThreeDImg {
+                        position: absolute;
+                        top: 20%;
+                        left: 13%;
+
+                        @media screen and (max-width:1600px) {
+                            top: 15%;
+                            left: 5%;
+                        }
+
+                        @media screen and (max-width:1399px) {
+                            top: 10%;
+                            left: -7%;
+                        }
+
+                        @media screen and (max-width:998px) {
+                            top: 26%;
+                            left: 10%;
+                        }
+
+                        @media screen and (max-width:876px) {
+                            top: 20%;
+                            left: 5%;
+                        }
+
+                        @media screen and (max-width:776px) {
+                            top: 20%;
+                            left: -2%;
+                        }
+
+                        @media screen and (max-width:676px) {
+                            top: 5%;
+                            left: -6%;
+
+                        }
+
+                        @media screen and (max-width:576px) {
+                            top: 4%;
+                            left: 0%;
+                            width: 139px;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+.artSFourProjectDiv {
+
+    .ProjectDiv {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        @media screen and (max-width:576px) {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .project {
+            color: #000;
+            font-family: "Gotham Medium";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+
+            @media screen and (max-width:576px) {
+                font-size: 30px;
+            }
+        }
+
+        .Otherproject {
+            color: #000;
+            font-family: "Gotham Medium";
+            font-size: 23px;
+            font-style: normal;
+            text-align: center;
+            font-weight: 500;
+            line-height: 117.5%;
+            letter-spacing: 12.19px;
+
+            @media screen and (max-width:576px) {
+                font-size: 18px;
+                letter-spacing: 10.19;
+            }
+        }
+
+        .artSFourProject {
+            margin-top: 60px;
+
+            @media screen and (max-width:576px) {
+                margin-top: 40px;
+            }
+
+            .imgDiv {
+                .imgTxt {
+                    padding-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .txt {
+                        color: #000;
+                        font-family: "Gotham Medium";
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 117.5%;
+
+                        @media screen and (max-width:576px) {
+                            font-size: 25px;
+                        }
+                    }
+
+                    .smTexts {
+                        padding-top: 11px;
+                        width: 100%;
+                        text-align: center;
+
+                        .smTxt {
+                            color: #000;
+                            font-family: Gotham;
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding-top: 11px;
+                            padding-bottom: 11px;
+                            border-bottom: 1px solid #D9D9D9;
+
+                            @media screen and (max-width:576px) {
+                                font-size: 15px;
+
+                            }
+                        }
+                    }
+
+
+                    .projectBtn {
+                        background: #000;
+                        color: #FFF;
+                        font-family: Gotham;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding: 11px 65px;
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.artsFourAProDiv {
+    margin-top: 30px;
+    position: relative;
+    padding-top: 57px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width:576px) {
+        padding-bottom: 60px;
+    }
+
+    .patch {
+        position: absolute;
+        background-color: #F3F3F5;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1200px;
+        z-index: -1;
+    }
+
+    .smImg {
+        padding-top: 40px;
+    }
+
+    .mirrorpaneDiv {
+        padding-left: 50px;
+
+        @media screen and (max-width:998px) {
+            margin-top: 40px;
+            padding-left: 0px;
+            padding: 20px;
+        }
+
+        .mirrorTXt {
+            color: #000;
+            font-family: "Gotham Medium";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 117.5%;
+
+            @media screen and (max-width:576px) {
+                font-size: 25px;
+
+            }
+        }
+
+        .bordertxt {
+            margin-top: 15px;
+
+            .txt {
+                color: #000;
+                font-family: Gotham;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-bottom: 1px solid #9B9B9B;
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+        }
+
+        .smTxts {
+            color: #000;
+            font-family: Gotham;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            padding-top: 40px;
+
+            @media screen and (max-width:576px) {
+                font-size: 16px;
+            }
+        }
+
+        .mirrorBtn {
+            color: #FFF;
+            font-family: Gotham;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 11px 60px;
+            background: #000;
+        }
+    }
+}
+
+.carAcreaPage {
+    margin-top: 30px;
+
+    .imgSec {
+        position: relative;
+
+        .imgText {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .txt {
+                // border: 1px solid red;
+                color: #FFF;
+                font-family: "Gotham Medium";
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 56px;
+                max-width: 523px;
+
+                @media screen and (max-width:1099px) {
+                    font-size: 39px;
+                    max-width: 435px;
+                }
+
+                @media screen and (max-width:576px) {
+                    font-size: 30px;
+                    max-width: 345px;
+                }
+
+            }
+
+            .careerSign {
+                @media screen and (max-width:576px) {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+.cooperationBlkDiv {
+    margin-top: -90px;
+
+    @media screen and (max-width:576px) {
+        margin-top: -15px;
+    }
+}
+
+.carAImgTxtDiv {
+    margin-top: 90px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width:998px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width:576px) {
+        margin-bottom: 40px;
+    }
+
+    .CareerTexts {
+        padding-left: 140px;
+        padding-right: 70px;
+
+        // max-width: 550px;
+        @media screen and (max-width:1199px) {
+            padding-left: 90px;
+        }
+
+        @media screen and (max-width:998px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding: 70px;
+        }
+
+        @media screen and (max-width:576px) {
+            padding: 30px;
+        }
+
+        .text {
+            color: #000;
+            font-family: "Gotham Medium";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+
+            @media screen and (max-width:1199px) {
+                font-size: 26px;
+            }
+
+            @media screen and (max-width:576px) {
+                font-size: 25px;
+            }
+        }
+
+        .smText {
+            color: #000;
+            font-family: Gotham;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 117.5%;
+            padding-top: 20px;
+
+            @media screen and (max-width:1199px) {
+                font-size: 20px;
+            }
+        }
+
+        .subTxt {
+            color: #000;
+            font-family: Gotham;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            padding-top: 50px;
+
+            @media screen and (max-width:1600px) {
+                font-size: 15px;
+                padding-top: 30px;
+            }
+
+            @media screen and (max-width:1199px) {
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .CarImg {
+        position: relative;
+        // background-image: url("/Images/carAInternImg.webp");
+        background-size: cover;
+        background-position: center;
+
+        .careerIg {
+            @media screen and (max-width:576px) {
+                display: none;
+            }
+        }
+
+        .carTxt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width:1299px) {
+                padding: 30px;
+            }
+
+            @media screen and (max-width:776px) {
+                padding: 70px;
+            }
+
+            @media screen and (max-width:576px) {
+                position: static;
+                padding: 30px;
+            }
+
+            .texts {
+
+                .text {
+                    color: #FAFAFA;
+                    font-family: "Playfair Display";
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 600;
+                    // line-height: 10px;
+                    max-width: 500px;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .subTxt {
+                    color: #FFF;
+                    font-family: Gotham;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    max-width: 593px;
+                    padding-top: 60px;
+
+                    @media screen and (max-width:1099px) {
+                        padding-top: 50px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 16px;
+                        padding-top: 40px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 16px;
+                        padding-top: 20px;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.EmpCorDiv {
+    margin-top: 30px;
+
+    .empCorImg {
+        position: relative;
+
+        .EmpConerText {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width:1199px) {
+                left: 73px;
+            }
+
+            @media screen and (max-width:1099px) {
+                left: 45px;
+                right: 28px;
+            }
+
+            @media screen and (max-width:576px) {
+                left: 30px;
+                right: 85px;
+            }
+
+            @media screen and (max-width:476px) {
+                left: 30px;
+                right: 50px;
+            }
+
+            .empText {
+                color: #FEFEFE;
+                font-family: "Playfair Display";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                width: 519px;
+
+                @media screen and (max-width:1299px) {
+                    font-size: 35px;
+                }
+
+                @media screen and (max-width:1199px) {
+                    font-size: 30px;
+                }
+
+                @media screen and (max-width:576px) {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+        }
+
+    }
+
+    .empcorTxtDiv {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+
+        @media screen and (max-width:1399px) {
+            padding-top: 70px;
+        }
+
+        @media screen and (max-width:1199px) {
+            padding-top: 30px;
+        }
+
+        .Texts {
+            max-width: 500px;
+            color: #000;
+            font-family: Gotham;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+
+            @media screen and (max-width:1299px) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width:1099px) {
+                line-height: 20px;
+            }
+
+            @media screen and (max-width:998px) {
+                max-width: 100%;
+                line-height: 24px;
+                padding: 50px;
+            }
+
+            @media screen and (max-width:576px) {
+                padding: 30px;
+                font-size: 14px;
+            }
+
+            .verEmp {
+                position: absolute;
+                top: 56%;
+                left: -13%;
+                rotate: -90deg;
+                color: #040404;
+                font-family: Gotham;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 10.6px;
+
+                @media screen and (max-width:1399px) {
+                    left: -17%;
+                    top: 53%;
+                    letter-spacing: 8.6px;
+                }
+
+                @media screen and (max-width:1276px) {
+                    position: static;
+                    rotate: 0deg;
+                    padding-bottom: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+}
+
+.empCorTableDiv {
+    .empTable {
+        padding-top: 55px;
+        padding-bottom: 130px;
+        padding-right: 140px;
+
+        @media screen and (max-width:1299px) {
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width:998px) {
+            padding-top: 0px;
+            padding-bottom: 70px;
+        }
+
+        @media screen and (max-width:576px) {
+            padding-right: 0px;
+            padding: 30px;
+        }
+
+        .empValues {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ABABAB;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .values {
+                .smValue {
+                    margin-left: 100px;
+                    color: #000;
+                    font-family: Gotham;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                    @media screen and (max-width:1199px) {
+                        margin-left: 37px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        margin-left: 0px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+        }
+
+        .value {
+            color: #000;
+            font-family: Gotham;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            margin-left: 100px;
+
+            @media screen and (max-width:1199px) {
+                font-size: 18px;
+                margin-left: 37px;
+            }
+
+            @media screen and (max-width:576px) {
+                margin-left: 0px;
+                font-size: 14px;
+            }
+        }
+
+        .btnn {
+            color: #FFF;
+            font-family: Gotham;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: #967043;
+            padding: 10px 50px;
+            border: none;
+        }
+    }
+
+    .bgEmptable {
+        background: #D9D9D9;
+
+        .empTable {
+            padding-top: 55px;
+            padding-bottom: 130px;
+            padding-right: 140px;
+
+            @media screen and (max-width:1299px) {
+                padding-right: 50px;
+            }
+
+            @media screen and (max-width:998px) {
+                padding-top: 0px;
+                padding-bottom: 70px;
+            }
+
+            @media screen and (max-width:576px) {
+                padding-right: 0px;
+                padding: 30px;
+            }
+
+            .empValues {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ABABAB;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                @media screen and (max-width:576px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    row-gap: 16px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .values {
+                .smValue {
+                    margin-left: 100px;
+                    color: #000;
+                    font-family: Gotham;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                    @media screen and (max-width:1199px) {
+                        margin-left: 37px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        margin-left: 0px;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .value {
+            color: #000;
+            font-family: Gotham;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            margin-left: 100px;
+
+            @media screen and (max-width:1199px) {
+                font-size: 18px;
+                margin-left: 37px;
+            }
+
+            @media screen and (max-width:576px) {
+                margin-left: 0px;
+                font-size: 14px;
+            }
+        }
+
+        .btnn {
+            color: #FFF;
+            font-family: Gotham;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: #967043;
+            padding: 10px 50px;
+            border: none;
+        }
+    }
+}
+
+.contactImgsDiv {
+    margin-top: 30px;
+
+    .conImg {
+        position: relative;
+
+        .verTxt {
+            color: #FFF;
+            font-family: Gotham;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 12.6px;
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            rotate: -90deg;
+
+            @media screen and (max-width:1399px) {
+                left: -63px;
+            }
+
+            @media screen and (max-width:1199px) {
+                left: -63px;
+                display: none;
+            }
+        }
+
+        .ImgDiv {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width:1199px) {
+                flex-direction: column;
+                align-items: flex-start;
+                left: 68px;
+            }
+
+            @media screen and (max-width:476px) {
+                left: 40px;
+            }
+
+            .verTxtt {
+                color: #FFF;
+                font-family: Gotham;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 12.6px;
+                display: none;
+
+                @media screen and (max-width:1199px) {
+                    display: block;
+                }
+
+                @media screen and (max-width:576px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .conTxt {
+            color: #FFF;
+            font-family: "Gotham Medium";
+            font-size: 46px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 56px;
+            max-width: 499px;
+
+            @media screen and (max-width:1399px) {
+                font-size: 40px;
+                padding-top: 17px;
+            }
+
+            @media screen and (max-width:576px) {
+                font-size: 35px;
+                line-height: 43px;
+                padding-top: 15px;
+            }
+
+            @media screen and (max-width:476px) {
+                font-size: 27px;
+            }
+        }
+    }
+}
+
+.contactTxtDiv {
+    background: rgba(237, 238, 240, 0.60);
+    margin-top: -220px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width:1099px) {
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width:576px) {
+        margin-bottom: 60px;
+    }
+
+    .conTexts {
+        padding-top: 70px;
+
+        @media screen and (max-width:1099px) {
+            padding-top: 0px;
+        }
+
+        @media screen and (max-width:576px) {
+            padding-top: 40px;
+        }
+
+        .TextsDiv {
+            border-bottom: 2px solid #858585;
+            margin-left: 100px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            @media screen and (max-width:1099px) {
+                margin-left: 70px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            @media screen and (max-width:998px) {
+                margin-left: 0px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding: 30px;
+            }
+
+            .Text {
+                color: #000;
+                font-family: "Gotham Medium";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+
+                @media screen and (max-width:576px) {
+                    font-size: 14px;
+                }
+
+            }
+
+            .smTxt {
+                color: #000;
+                font-family: Gotham;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 325;
+                line-height: 26px;
+                padding-top: 8px;
+
+
+                @media screen and (max-width:1099px) {
+                    font-size: 15px;
+                }
+
+                @media screen and (max-width:576px) {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}
