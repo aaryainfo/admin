@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
 import AboutUs from '../Pages/AboutUs'
 import ReadyProducts from '../Pages/ReadyProducts'
@@ -33,11 +33,18 @@ import AdminUpdateLinks from '../Pages/AdminUpdateLinks';
 
 function App() {
 
+  // Check if token is present in localStorage
+  const token = localStorage.getItem('token');
+
   return (
     <>
     <ToastContainer/>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+        {/* Redirect to Dashboard if token is present, otherwise to Login */}
+        <Route path="/dashboard" element={token ? <AdminDashboard /> : <Navigate to="/login" />} />
+        <Route path="/login" element={<AdminLogin />} />
+        {/* <Route path='/' element={<Home />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/ready' element={<ReadyProducts />} />
         <Route path='/artstuone' element={<ArtStudio />} />
@@ -64,12 +71,7 @@ function App() {
 
         <Route path='/admin-links' element={<AdminLinks/>} />
         <Route path='/admin-links/add' element={<AdminAddLinks/>} />
-        <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} />
-
-
-
-
-
+        <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} /> */}
 
       </Routes>
     </>
