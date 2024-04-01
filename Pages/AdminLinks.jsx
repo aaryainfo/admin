@@ -8,7 +8,7 @@ import ReactPaginate from 'react-paginate';
 import { AiOutlineLink } from 'react-icons/ai'
 import AdminHead from './Components/Admin/Adminhead'
 import AdminSidebar from './Components/Admin/Adminsidebar'
-import { getBlogList1 } from '../src/services/admin-auth.service'
+import { deleteBlogApi, getBlogList1 } from '../src/services/admin-auth.service'
 
 function AdminLinks() {
 
@@ -52,30 +52,22 @@ function AdminLinks() {
         }
     }
 
-    async function deleteProduct(idd) {
+    async function deleteBlog(idd) {
         try {
 
-            let formData = new FormData()
-            formData.append('_method', 'DELETE')
 
-            const res = await fetch(`${import.meta.env.VITE_APP_URL}/api/admin/delete-project?project_id=${idd}`, {
-                method: "POST",
-                headers: {
+            let payload = {"id": idd}
+            const deletedBlog = await deleteBlogApi(payload);
 
-                },
-                body: formData
-            })
-            const data = await res.json()
-
-            if (data.status) {
-                console.log(data);
+            if (deletedBlog.message === "Blog deleted successfully!") {
+                console.log(deletedBlog);
                 toast.success('Delete Successfully')
                 setToggler((state) => !state)
             } else {
-                if (Object.values(data.data).length > 0) {
+                if (Object.values(deletedBlog.data).length > 0) {
                     toast.warn(Object.values(data.data)[0][0])
                 } else {
-                    toast.warn(data.message)
+                    toast.warn(deletedBlog.message)
                 }
             }
 
@@ -185,7 +177,7 @@ console.log(formattedDate); // Output: "2024-03-31"
                                                             </button>
                                                         </Link>
 
-                                                        <button onClick={() => { deleteProduct(item.project_id) }} className='EditDltbtn'>
+                                                        <button onClick={() => { deleteBlog(item.id) }} className='EditDltbtn'>
                                                             <MdDelete />
                                                         </button>
                                                     </div>

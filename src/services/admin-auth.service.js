@@ -43,3 +43,18 @@ export const createBlogList = (payload) => {
         return error;
     });
 }
+
+
+export const deleteBlogApi = (payload) => {
+    return axiosInstance.post('/api/admin/blog/delete', payload)
+        .then((response) => {
+            // Handle successful response
+            console.log(response.data);
+            return response.data;
+        })
+    .catch((error) => {
+        // Handle error
+        console.error('Error fetching data:', error);
+        return error;
+    });
+}
