@@ -2,8 +2,9 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
+import { signInAdmin } from '../src/services/admin-auth.service';
 
-export default function AdminLogin() {
+export default function Adminlogin() {
     const navigate = useNavigate();
 
     // Define validation schema using Yup
@@ -16,9 +17,10 @@ export default function AdminLogin() {
     const handleSubmit = async (values, { setSubmitting }) => {
         try {
             // Perform login operation
+            const signInResult = await signInAdmin(values);
             // If login is successful, navigate to dashboard
-            localStorage.setItem('vivotoken', 'dummy-token'); // Dummy token for demonstration
-            navigate('/admin-dashboard');
+            localStorage.setItem('token', signInResult.token); // Dummy token for demonstration
+            navigate('/dashboard');
         } catch (error) {
             console.error(error);
             // Handle error (e.g., display error message)

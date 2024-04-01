@@ -68,10 +68,28 @@ function App() {
         <Route path='/admin-projects' element={<AdminProjects/>} />
         <Route path='/admin-projects/add' element={<AdminAddProject/>} />
         <Route path='/admin-projects/update/:id' element={<AdminUpdateProject/>} />
-
-        <Route path='/admin-links' element={<AdminLinks/>} />
+*/}
+        {/* {token ?? <Route path='/admin-links' element={<AdminLinks/>} />}
         <Route path='/admin-links/add' element={<AdminAddLinks/>} />
-        <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} /> */}
+        <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} />  */}
+
+{token && (
+    <>
+      <Route path='/admin-links' element={<AdminLinks/>} />
+      <Route path='/admin-links/add' element={<AdminAddLinks/>} />
+      <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} /> 
+    </>
+  )}
+
+
+  {/* //temp */}
+  <Route path='/admin-products' element={<AdminProducts/>} />
+        <Route path='/admin-products/add' element={<AdminAddProduct/>} />
+        <Route path='/admin-products/update/:id' element={<AdminUpdateProduct/>} />
+
+        <Route path='/admin-projects' element={<AdminProjects/>} />
+        <Route path='/admin-projects/add' element={<AdminAddProject/>} />
+        <Route path='/admin-projects/update/:id' element={<AdminUpdateProject/>} />
 
       </Routes>
     </>

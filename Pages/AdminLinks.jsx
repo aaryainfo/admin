@@ -8,6 +8,7 @@ import ReactPaginate from 'react-paginate';
 import { AiOutlineLink } from 'react-icons/ai'
 import AdminHead from './Components/Admin/Adminhead'
 import AdminSidebar from './Components/Admin/Adminsidebar'
+import { getBlogList1 } from '../src/services/admin-auth.service'
 
 function AdminLinks() {
 
@@ -21,34 +22,29 @@ function AdminLinks() {
     const [toggler, setToggler] = useState(false)
 
     useEffect(() => {
-        getProductList()
+        getBlogList()
     }, [toggler])
 
 
-    async function getProductList() {
+    async function getBlogList() {
         try {
-            // let token = localStorage.getItem('vivotoken')
-            const res = await fetch(`${import.meta.env.VITE_APP_URL}/api/admin/get-paginated-project-list?per_page=10&page=1`, {
-                method: "GET",
-                headers: {
-
-                }
-            })
-            const data = await res.json()
-            // console.log(data);
+            
+            const blogList = await getBlogList1();
+            const data = blogList.data;// await res.json()
+            console.log(data);
             // setProductListState(data.data.product_list.product_data)
 
-            if (data.status) {
+            if (data.length) {
                 console.log("products generated", data)
-                setProductListState(data.data.project_list.project_data_list)
-                setTotalPages(data.data.project_list.last_page)
+                setProductListState(data)
+                // setTotalPages(data.data.project_list.last_page)
 
             } else {
-                if (Object.values(data.data).length > 0) {
-                    toast.warn(Object.values(data.data)[0][0])
-                } else {
-                    toast.warn(data.message)
-                }
+                // if (Object.values(data.data).length > 0) {
+                //     toast.warn(Object.values(data.data)[0][0])
+                // } else {
+                //     toast.warn(data.message)
+                // }
             }
 
         } catch (error) {
@@ -92,6 +88,12 @@ function AdminLinks() {
     const handlePageClick = (event) => {
         setCurPage(event.selected + 1)
     };
+    const dateFormat = (passedDate) => {
+        const date = new Date(passedDate);
+        const formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+console.log(formattedDate); // Output: "2024-03-31"
+        return formattedDate;
+    }
 
 
     return (
@@ -103,10 +105,10 @@ function AdminLinks() {
                     <div className="adRightContent">
                         <div className="pathSec">
                             <div className="title">
-                                Links
+                                Blogs
                             </div>
                             <div className="path">
-                                Admin 	&gt; <span> Links</span>
+                                Admin 	&gt; <span> Blogs</span>
                             </div>
                             <Link to={'/admin-links/add'}>
                                 <button className="addBtn">
@@ -129,10 +131,10 @@ function AdminLinks() {
                                             Title
                                         </td>
                                         <td>
-                                            identification_number
+                                            Most Polupar
                                         </td>
                                         <td>
-                                            initiation_date
+                                            Updated At
                                         </td>
                                         <td>
                                             Is Active
@@ -150,22 +152,22 @@ function AdminLinks() {
                                                     {((curPage + 1) * 0) + (ind + 1)}
                                                 </td>
                                                 <td>
-                                                    <img src={item.images[0].image} width={100} alt="product image" />
+                                                    <img src={(item.images && item.images[0]) ?? ''} width={100} alt="product image" />
                                                 </td>
                                                 <td>
                                                     {item.title}
                                                 </td>
                                                 <td>
-                                                    {item.identification_number}
+                                                    {item.mostPopular}
                                                 </td>
                                                 <td>
-                                                    {item.initiation_date}
+                                                    {dateFormat(item.updatedAt)}
                                                 </td>
                                                 {/* <td>
                                                 {item.text}
                                             </td> */}
                                                 <td>
-                                                    {item.is_active ?
+                                                    {item.isActive ?
                                                         <div className="isAct">
                                                             Yes
                                                         </div>
