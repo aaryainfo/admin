@@ -171,7 +171,7 @@ console.log(formattedDate); // Output: "2024-03-31"
                                                 </td>
                                                 <td>
                                                     <div className="actions">
-                                                        <Link to={`/admin-projects/update/${item.project_id}`}>
+                                                        <Link to={`/admin-links/update/${item.id}`}>
                                                             <button className='EditIcobtn' >
                                                                 <MdModeEditOutline />
                                                             </button>

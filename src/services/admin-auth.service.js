@@ -44,9 +44,36 @@ export const createBlogList = (payload) => {
     });
 }
 
+export const updateBlogList = (payload) => {
+    return axiosInstance.post('/api/admin/blog/update', payload)
+        .then((response) => {
+            // Handle successful response
+            console.log(response.data);
+            return response.data;
+        })
+    .catch((error) => {
+        // Handle error
+        console.error('Error fetching data:', error);
+        return error;
+    });
+}
 
 export const deleteBlogApi = (payload) => {
     return axiosInstance.post('/api/admin/blog/delete', payload)
+        .then((response) => {
+            // Handle successful response
+            console.log(response.data);
+            return response.data;
+        })
+    .catch((error) => {
+        // Handle error
+        console.error('Error fetching data:', error);
+        return error;
+    });
+}
+
+export const getBlogWithId = (payLoad) => {
+    return axiosInstance.post('/api/admin/blog/getBlogWithId', payLoad)
         .then((response) => {
             // Handle successful response
             console.log(response.data);
