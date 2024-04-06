@@ -1,8 +1,7 @@
 import axiosInstance from '../lib/axiosbase';
 
-export const signInAdmin = (loginData) => {
-    
-    return axiosInstance.post('/api/auth/signin', loginData)
+export const getCustomerList1 = () => {
+    return axiosInstance.get('/api/admin/customer/get')
         .then((response) => {
             // Handle successful response
             console.log(response.data);
@@ -15,8 +14,8 @@ export const signInAdmin = (loginData) => {
     });
 }
 
-export const getBlogList1 = () => {
-    return axiosInstance.get('/api/admin/blog/get')
+export const createCustomerList = (payload) => {
+    return axiosInstance.post('/api/admin/customer/create', payload)
         .then((response) => {
             // Handle successful response
             console.log(response.data);
@@ -29,8 +28,8 @@ export const getBlogList1 = () => {
     });
 }
 
-export const createBlogList = (payload) => {
-    return axiosInstance.post('/api/admin/blog/create', payload)
+export const updateCustomerList = (payload) => {
+    return axiosInstance.post('/api/admin/customer/update', payload)
         .then((response) => {
             // Handle successful response
             console.log(response.data);
@@ -43,8 +42,8 @@ export const createBlogList = (payload) => {
     });
 }
 
-export const updateBlogList = (payload) => {
-    return axiosInstance.post('/api/admin/blog/update', payload)
+export const deleteCustomerApi = (payload) => {
+    return axiosInstance.post('/api/admin/customer/delete', payload)
         .then((response) => {
             // Handle successful response
             console.log(response.data);
@@ -57,22 +56,8 @@ export const updateBlogList = (payload) => {
     });
 }
 
-export const deleteBlogApi = (payload) => {
-    return axiosInstance.post('/api/admin/blog/delete', payload)
-        .then((response) => {
-            // Handle successful response
-            console.log(response.data);
-            return response.data;
-        })
-    .catch((error) => {
-        // Handle error
-        console.error('Error fetching data:', error);
-        return error;
-    });
-}
-
-export const getBlogWithId = (payLoad) => {
-    return axiosInstance.post('/api/admin/blog/getBlogWithId', payLoad)
+export const getCustomerWithId = (payLoad) => {
+    return axiosInstance.post('/api/admin/customer/getCustomerWithId', payLoad)
         .then((response) => {
             // Handle successful response
             console.log(response.data);

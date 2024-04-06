@@ -26,11 +26,16 @@ import AdminUpdateProduct from "../Pages/AdminUpdateProduct";
 import AdminAddProject from "../Pages/AdminAddProject";
 import AdminProjects from "../Pages/AdminProjects";
 import AdminUpdateProject from "../Pages/AdminUpdateProject";
-import AdminBlogs from "../Pages/BlogsPages/AdminBlogs";
 
 // Blogs
+import AdminBlogs from "../Pages/BlogsPages/AdminBlogs";
 import AdminAddBlog from "../Pages/BlogsPages/AdminAddBlog";
 import AdminUpdateBlog from "../Pages/BlogsPages/AdminUpdateBlog";
+
+// Customers
+import AdminCustomers from "../Pages/CustomersPages/AdminCustomers";
+import AdminAddCustomer from "../Pages/CustomersPages/AdminAddCustomer";
+import AdminUpdateCustomer from "../Pages/CustomersPages/AdminUpdateCustomer";
 // added comment
 
 function App() {
@@ -84,6 +89,13 @@ function App() {
             <Route
               path="/admin-blogs/update/:id"
               element={<AdminUpdateBlog />}
+            />
+
+            <Route path="/admin-customers" element={<AdminCustomers />} />
+            <Route path="/admin-customers/add" element={<AdminAddCustomer />} />
+            <Route
+              path="/admin-customers/update/:id"
+              element={<AdminUpdateCustomer />}
             />
           </>
         )}
