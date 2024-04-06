@@ -8,21 +8,13 @@ import { createBlogList } from "../src/services/admin-auth.service";
 import JoditEditor from "jodit-react";
 
 function AdminAddLinks() {
-  const [curCategory, setCurCategory] = useState("");
-
   const navigate = useNavigate();
+  const editor3 = useRef(null);
 
   // add product states
-  const [tagTitle, setTagTitle] = useState("");
   const [tagIsActive, setTagIsActive] = useState(true);
-
   const [title, SetTitle] = useState("");
-  const editor3 = useRef(null);
   const [content, SetContent] = useState("");
-
-  const [langCZ, SetLangCZ] = useState("");
-  const [langHI, setLangHI] = useState("");
-
   const [images, setImages] = useState([]);
 
   function dltImg(inx) {
@@ -34,7 +26,6 @@ function AdminAddLinks() {
         return false;
       }
     });
-    console.log("newArr: ", newArr);
     setImages(newArr);
   }
 
@@ -52,32 +43,23 @@ function AdminAddLinks() {
         toast.warn("Please fill the required field");
         return;
       }
-      // if (!langHI) {
-      //     toast.warn('Please fill the required field')
-      //     return
-      // }
 
       let formData = new FormData();
-      // formData.append('category_id', curCategory)
       formData.append("title", title);
       formData.append("content", content);
       formData.append("images", [...images]);
       formData.append("mostPopular", 0);
-
       formData.append("isActive", tagIsActive ? 1 : 0);
 
       let payload = {};
 
       for (const pair of formData.entries()) {
         const key = pair[0];
-        console.log("key: ", key);
         const value = pair[1];
-        console.log("value: ", value);
 
         if (key === "images") {
           payload[key] = [value]; // If you want to include the entire array
           // If you want to include each value of the array separately:
-          // payload[key] = [...(payload[key] || []), ...value];
         } else {
           payload[key] = value;
         }
@@ -86,15 +68,11 @@ function AdminAddLinks() {
 
       console.log(payload);
       const blogList = await createBlogList(payload);
-      const data = blogList.data; // await res.json()
-      console.log("data: ", data);
-      // setProductListState(data.data.product_list.product_data)
+      const data = blogList.data;
 
       if (data) {
-        console.log("products generated", data);
-        // setProductListState(data);
+        toast.success("Product Added Successfully");
         navigate("/admin-links");
-        // setTotalPages(data.data.project_list.last_page)
       } else {
         // if (Object.values(data.data).length > 0) {
         //     toast.warn(Object.values(data.data)[0][0])
@@ -102,27 +80,6 @@ function AdminAddLinks() {
         //     toast.warn(data.message)
         // }
       }
-
-      // const res = await fetch(`${import.meta.env.VITE_APP_URL}/api/admin/post-store-product`, {
-      //     method: 'POST',
-      //     headers: {
-
-      //     },
-      //     body: formData
-      // })
-      // const data = await res.json()
-      // console.log(data);
-
-      // if (data.status) {
-      //     toast.success('Product Added Successfully')
-      //     navigate('/admin-links')
-      // } else {
-      //     if (Object.values(data.data).length > 0) {
-      //         toast.warn(Object.values(data.data)[0][0])
-      //     } else {
-      //         toast.warn(data.message)
-      //     }
-      // }
     } catch (error) {
       console.log(error.message);
     }
@@ -182,23 +139,6 @@ function AdminAddLinks() {
                         </div>
                       </div>
                     </div>
-                    {/* <div className="inBox">
-                                            <div className="inTitle">Link Heading(CZ) <span className='req'>*</span> </div>
-                                            <input type="text" name="" value={langCZ} onChange={(e) => {
-                                                SetLangCZ(e.target.value)
-                                            }} className='inText' placeholder='Enter title' id="" />
-                                        </div>
-                                        <div className="inBox">
-                                            <div className="inTitle">Link Heading(HI) <span className='req'>*</span> </div>
-                                            <input type="text" name="" value={langHI} onChange={(e) => {
-                                                setLangHI(e.target.value)
-                                            }} className='inText' placeholder='Enter title' id="" />
-                                        </div>
-
-                                        <div className="inBox">
-                                            <div className="inTitle">Go to Link<span className='req'>*</span> </div>
-                                            <input type="text" name="" className='inText' placeholder='Enter Link' id="" />
-                                        </div> */}
 
                     <div className="imgsDDiv">
                       <div className="headi">Images</div>
@@ -223,11 +163,6 @@ function AdminAddLinks() {
                           };
 
                           reader.readAsDataURL(e.target.files[0]);
-
-                          //
-                          // newArr.push(e.target.files[0])
-                          // console.log("h new: ", newArr)
-                          // setImages(newArr)
                         }}
                         type="file"
                         className="d-none"
