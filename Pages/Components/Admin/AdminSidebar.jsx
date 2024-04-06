@@ -15,7 +15,7 @@ export default function AdminSidebar() {
             Dashboard
           </NavLink>
         </div>
-        <Accordion flush className="customAcco">
+        {/* <Accordion flush className="customAcco">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               {" "}
@@ -23,16 +23,7 @@ export default function AdminSidebar() {
             </Accordion.Header>
             <Accordion.Body>
               <ul>
-                {/* <li>
-                                    <NavLink to={'/admin-tags'}>
-                                        Product tag
-                                    </NavLink>
-                                </li> */}
-                {/* <li>
-                                    <NavLink to={'/admin-categories'}>
-                                        Product category
-                                    </NavLink>
-                                </li> */}
+               
                 <li>
                   <NavLink to={"/admin-products"}>Products</NavLink>
                 </li>
@@ -42,7 +33,7 @@ export default function AdminSidebar() {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-        </Accordion>
+        </Accordion> */}
         <div className="sideLinks">
           <NavLink className="siLink" to={"/admin-blogs"}>
             <RiLinksFill className="catIcons" /> Blogs

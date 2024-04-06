@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "react-toastify/dist/ReactToastify.css";
@@ -40,7 +40,11 @@ import AdminUpdateCustomer from "../Pages/CustomersPages/AdminUpdateCustomer";
 
 function App() {
   // Check if token is present in localStorage
-  const token = localStorage.getItem("token");
+  const [token, setToken] = useState("");
+
+  useEffect(() => {
+    setToken(localStorage.getItem("token"));
+  }, []);
 
   return (
     <>
@@ -101,7 +105,7 @@ function App() {
         )}
 
         {/* //temp */}
-        <Route path="/admin-products" element={<AdminProducts />} />
+        {/* <Route path="/admin-products" element={<AdminProducts />} />
         <Route path="/admin-products/add" element={<AdminAddProduct />} />
         <Route
           path="/admin-products/update/:id"
@@ -113,7 +117,7 @@ function App() {
         <Route
           path="/admin-projects/update/:id"
           element={<AdminUpdateProject />}
-        />
+        /> */}
       </Routes>
     </>
   );
