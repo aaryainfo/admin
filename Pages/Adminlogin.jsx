@@ -1,73 +1,63 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify'
+import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
+import { signInAdmin } from '../src/services/admin-auth.service';
 
-export default function AdminLogin() {
+export default function Adminlogin() {
+    const navigate = useNavigate();
 
-    const [userEmail, setUserEmail] = useState('')
-    const [userPass, setUserPass] = useState('')
-    const [isLoading, setIsLoading] = useState(false)
+    // Define validation schema using Yup
+    const validationSchema = Yup.object().shape({
+        email: Yup.string().email('Invalid email').required('Email is required'),
+        password: Yup.string().required('Password is required')
+    });
 
-    const navigate = useNavigate()
-
-
-    async function loginFn() {
+    // Handle form submission
+    const handleSubmit = async (values, { setSubmitting }) => {
         try {
-            let formData = new FormData()
-            formData.append('email', userEmail)
-            formData.append('password', userPass)
-            const res = await fetch('https://vivopune.com/backend/public/api/account/admin-login', {
-                method: "POST",
-                headers: {
-                    "Accept": "application/json"
-                },
-                body: formData
-            })
-
-            const data = await res.json()
-            console.log(data)
-            if (data.status) {
-                toast.success(data.message)
-                localStorage.setItem('vivotoken', data.data.token)
-                navigate('/admin-dashboard')
-            } else {
-                if(Object.values(data.data).length > 0){
-                    toast.warn(Object.values(data.data)[0][0])
-                }else{
-                    toast.warn(data.message)
-                }
-            }
-
-
-
+            // Perform login operation
+            const signInResult = await signInAdmin(values);
+            // If login is successful, navigate to dashboard
+            localStorage.setItem('token', signInResult.token); // Dummy token for demonstration
+            navigate('/dashboard');
         } catch (error) {
-            console.log(error)
-            toast.warn("Something went wrong")
+            console.error(error);
+            // Handle error (e.g., display error message)
+        } finally {
+            setSubmitting(false);
         }
-    }
+    };
 
     return (
-        <div className='adminLoginPage' >
+        <div className='adminLoginPage'>
             <div className="adminLoginDiv">
                 <div className="heading">Admin Login</div>
-                <div className="inBox">
-                    <div className="tit">
-                        Email ID
-                    </div>
-                    <input type="text" value={userEmail} onChange={(e) => { setUserEmail(e.target.value) }} placeholder='Enter Email' className="inText" />
-                </div>
-                <div className="inBox">
-                    <div className="tit">
-                        Password
-                    </div>
-                    <input type="password" value={userPass} onChange={(e) => { setUserPass(e.target.value) }} placeholder='Enter Password' className="inText" />
-                </div>
-                <button className="loginbtn"
-                //  onClick={() => { loginFn() }}
-                  >
-                    Login
-                </button>
+                {/* Formik handles form state and validation */}
+                <Formik
+                    initialValues={{ email: '', password: '' }}
+                    validationSchema={validationSchema}
+                    onSubmit={handleSubmit}
+                >
+                    {({ isSubmitting }) => (
+                        <Form>
+                            <div className="inBox">
+                                <div className="tit">Email ID</div>
+                                <Field type="email" name="email" placeholder="Enter Email" className="inText" />
+                                <ErrorMessage name="email" component="div" className="error error-message" />
+                            </div>
+                            <div className="inBox">
+                                <div className="tit">Password</div>
+                                <Field type="password" name="password" placeholder="Enter Password" className="inText" />
+                                <ErrorMessage name="password" component="div" className="error error-message" />
+                            </div>
+                            <button type="submit" className="loginbtn" disabled={isSubmitting}>
+                                {isSubmitting ? 'Logging in...' : 'Login'}
+                            </button>
+                        </Form>
+                    )}
+                </Formik>
             </div>
         </div>
-    )
+    );
 }
