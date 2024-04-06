@@ -26,11 +26,11 @@ import AdminUpdateProduct from "../Pages/AdminUpdateProduct";
 import AdminAddProject from "../Pages/AdminAddProject";
 import AdminProjects from "../Pages/AdminProjects";
 import AdminUpdateProject from "../Pages/AdminUpdateProject";
-import AdminLinks from "../Pages/AdminLinks";
+import AdminBlogs from "../Pages/BlogsPages/AdminBlogs";
 
 // Blogs
-import AdminAddLinks from "../Pages/BlogsPages/AdminAddLinks";
-import AdminUpdateLinks from "../Pages/BlogsPages/AdminUpdateLinks";
+import AdminAddBlog from "../Pages/BlogsPages/AdminAddBlog";
+import AdminUpdateBlog from "../Pages/BlogsPages/AdminUpdateBlog";
 // added comment
 
 function App() {
@@ -73,17 +73,17 @@ function App() {
         <Route path='/admin-projects/add' element={<AdminAddProject/>} />
         <Route path='/admin-projects/update/:id' element={<AdminUpdateProject/>} />
 */}
-        {/* {token ?? <Route path='/admin-links' element={<AdminLinks/>} />}
-        <Route path='/admin-links/add' element={<AdminAddLinks/>} />
-        <Route path='/admin-links/update/:id' element={<AdminUpdateLinks/>} />  */}
+        {/* {token ?? <Route path='/admin-blogs' element={<AdminBlogs/>} />}
+        <Route path='/admin-blogs/add' element={<AdminAddLinks/>} />
+        <Route path='/admin-blogs/update/:id' element={<AdminUpdateLinks/>} />  */}
 
         {token && (
           <>
-            <Route path="/admin-links" element={<AdminLinks />} />
-            <Route path="/admin-links/add" element={<AdminAddLinks />} />
+            <Route path="/admin-blogs" element={<AdminBlogs />} />
+            <Route path="/admin-blogs/add" element={<AdminAddBlog />} />
             <Route
-              path="/admin-links/update/:id"
-              element={<AdminUpdateLinks />}
+              path="/admin-blogs/update/:id"
+              element={<AdminUpdateBlog />}
             />
           </>
         )}
