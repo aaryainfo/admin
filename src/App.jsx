@@ -36,6 +36,9 @@ import AdminUpdateBlog from "../Pages/BlogsPages/AdminUpdateBlog";
 import AdminCustomers from "../Pages/CustomersPages/AdminCustomers";
 import AdminAddCustomer from "../Pages/CustomersPages/AdminAddCustomer";
 import AdminUpdateCustomer from "../Pages/CustomersPages/AdminUpdateCustomer";
+import AdminProperties from "../Pages/PropertiesPages/AdminProperties";
+import AdminAddProperty from "../Pages/PropertiesPages/AdminAddProperty";
+import AdminUpdateProperty from "../Pages/PropertiesPages/AdminUpdateProperty";
 // added comment
 
 function App() {
@@ -100,6 +103,16 @@ function App() {
             <Route
               path="/admin-customers/update/:id"
               element={<AdminUpdateCustomer />}
+            />
+
+            <Route path="/admin-properties" element={<AdminProperties />} />
+            <Route
+              path="/admin-properties/add"
+              element={<AdminAddProperty />}
+            />
+            <Route
+              path="/admin-properties/update/:id"
+              element={<AdminUpdateProperty />}
             />
           </>
         )}

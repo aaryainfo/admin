@@ -35,13 +35,18 @@ export default function AdminSidebar() {
           </Accordion.Item>
         </Accordion> */}
         <div className="sideLinks">
+          <NavLink className="siLink" to={"/admin-properties"}>
+            <RiLinksFill className="catIcons" /> Properties
+          </NavLink>
+        </div>
+        <div className="sideLinks">
           <NavLink className="siLink" to={"/admin-blogs"}>
             <RiLinksFill className="catIcons" /> Blogs
           </NavLink>
         </div>
         <div className="sideLinks">
           <NavLink className="siLink" to={"/admin-customers"}>
-            <FaUserAlt className="catIcons" /> Customers
+            <FaUserAlt className="catIcons" /> Contact Us List
           </NavLink>
         </div>
       </div>
