@@ -9,6 +9,7 @@ import {
   getPropertyWithId,
   updatePropertyList,
 } from "../../src/services/property.service";
+import { OptionsPropertyTypeEnum } from "../enums/property.enum";
 
 function AdminUpdateProperty() {
   const navigate = useNavigate();
@@ -122,6 +123,14 @@ function AdminUpdateProperty() {
     }
   }
 
+  // Convert enum values to an array of objects for easy mapping
+  const OptionsPropertyTypeArray = Object.keys(OptionsPropertyTypeEnum).map(
+    (key) => ({
+      value: key,
+      label: OptionsPropertyTypeEnum[key],
+    })
+  );
+
   return (
     <>
       <div className="AdminDashMain">
@@ -146,33 +155,67 @@ function AdminUpdateProperty() {
                       <div className="inPropertyType">
                         Property<span className="req">*</span>{" "}
                       </div>
-                      <input
-                        type="text"
-                        name=""
-                        value={property}
-                        onChange={(e) => {
-                          setProperty(e.target.value);
-                        }}
-                        className="inText"
-                        placeholder="Enter Property"
-                        id=""
-                      />
+                      <div style={{ display: "flex", flexDirection: "row" }}>
+                        <div>
+                          <input
+                            type="radio"
+                            id="buy"
+                            value="Buy"
+                            checked={property === "Buy"}
+                            onChange={(e) => {
+                              setProperty(e.target.value);
+                            }}
+                          />
+                          <label htmlFor="buy">Buy</label>
+                        </div>
+                        <div style={{ marginLeft: "40px" }}>
+                          <input
+                            type="radio"
+                            id="rent"
+                            value="Rent"
+                            checked={property === "Rent"}
+                            onChange={(e) => {
+                              setProperty(e.target.value);
+                            }}
+                          />
+                          <label htmlFor="rent">Rent</label>
+                        </div>
+                        <div style={{ marginLeft: "40px" }}>
+                          <input
+                            type="radio"
+                            id="sell"
+                            value="Sell"
+                            checked={property === "Sell"}
+                            onChange={(e) => {
+                              setProperty(e.target.value);
+                            }}
+                          />
+                          <label htmlFor="sell">Sell</label>
+                        </div>
+                      </div>
                     </div>
+
                     <div className="inBox">
                       <div className="inPropertyType">
                         Property Type<span className="req">*</span>{" "}
                       </div>
-                      <input
-                        type="text"
-                        name=""
+                      <select
                         value={propertyType}
                         onChange={(e) => {
                           setPropertyType(e.target.value);
                         }}
-                        className="inText"
-                        placeholder="Enter Property Type"
-                        id=""
-                      />
+                        className="inSelect"
+                      >
+                        <option value="" disabled>
+                          Select Property Type
+                        </option>
+                        {OptionsPropertyTypeArray.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
+                          </option>
+                        ))}
+                        {/* Add more options as needed */}
+                      </select>
                     </div>
 
                     <div className="inBox">

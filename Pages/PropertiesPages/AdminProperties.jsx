@@ -12,6 +12,7 @@ import {
   deletePropertyApi,
   getPropertyList1,
 } from "../../src/services/property.service";
+import { OptionsPropertyTypeEnum } from "../enums/property.enum";
 
 function AdminProperties() {
   // products list states
@@ -125,7 +126,7 @@ function AdminProperties() {
                             alt="product image"
                           />
                         </td> */}
-                        <td>{item.propertyType}</td>
+                        <td>{OptionsPropertyTypeEnum[item.propertyType]}</td>
                         <td>{item.name}</td>
                         <td>{item.price}</td>
                         <td>{item.location}</td>
