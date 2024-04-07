@@ -21,7 +21,7 @@ function AdminAddProperty() {
   const [address, setAddress] = useState("");
   const [carpetArea, setCarpetArea] = useState("");
   const [details, setDetails] = useState("");
-  // const [tagIsHot, setTagIsHot] = useState(true);
+  const [tagIsHot, setTagIsHot] = useState(true);
   const [tagIsActive, setTagIsActive] = useState(true);
 
   function dltImg(inx) {
@@ -62,7 +62,7 @@ function AdminAddProperty() {
       formData.append("address", address);
       formData.append("carpetArea", carpetArea);
       formData.append("details", details);
-      // formData.append("isHot", tagIsHot ? 1 : 0);
+      formData.append("isHot", tagIsHot ? 1 : 0);
       // formData.append("images", [...images]);
       formData.append("isActive", tagIsActive ? 1 : 0);
 
@@ -151,7 +151,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Name<span className="req">*</span>{" "}
@@ -168,7 +167,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Price<span className="req">*</span>{" "}
@@ -185,7 +183,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Unit<span className="req">*</span>{" "}
@@ -202,7 +199,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Location<span className="req">*</span>{" "}
@@ -219,7 +215,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Address<span className="req">*</span>{" "}
@@ -236,7 +231,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inPropertyType">
                         Carpet Area<span className="req">*</span>{" "}
@@ -253,7 +247,6 @@ function AdminAddProperty() {
                         id=""
                       />
                     </div>
-
                     <div className="inBox">
                       <div className="inTitle">
                         Details<span className="req">*</span>{" "}
@@ -321,7 +314,19 @@ function AdminAddProperty() {
                         })}
                       </div>
                     </div> */}
-
+                    <div className="inBox">
+                      <div className="inTitle">Is Hot</div>
+                      <input
+                        type="checkbox"
+                        checked={tagIsHot ? "checked" : ""}
+                        onChange={(e) => {
+                          setTagIsHot(e.target.checked);
+                        }}
+                        name=""
+                        className="inCheck"
+                        id=""
+                      />
+                    </div>
                     <div className="inBox">
                       <div className="inTitle">Is Active</div>
                       <input
