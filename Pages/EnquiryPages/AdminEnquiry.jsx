@@ -9,11 +9,11 @@ import { AiOutlineLink } from "react-icons/ai";
 import AdminHead from "../Components/Admin/Adminhead";
 import AdminSidebar from "../Components/Admin/Adminsidebar";
 import {
-  deleteCustomerApi,
-  getCustomerList1,
-} from "../../src/services/customer.service";
+  deleteEnquiryApi,
+  getEnquiryList1,
+} from "../../src/services/enquiry.service";
 
-function AdminCustomers() {
+function AdminEnquiry() {
   // products list states
   const [curPage, setCurPage] = useState("");
 
@@ -23,13 +23,13 @@ function AdminCustomers() {
   const [toggler, setToggler] = useState(false);
 
   useEffect(() => {
-    getCustomerList();
+    getEnquiryList();
   }, [toggler, setToggler]);
 
-  async function getCustomerList() {
+  async function getEnquiryList() {
     try {
-      const customerList = await getCustomerList1();
-      const data = customerList.data; // await res.json()
+      const EnquiryList = await getEnquiryList1();
+      const data = EnquiryList.data; // await res.json()
       console.log(data);
       // setProductListState(data.data.product_list.product_data)
 
@@ -49,20 +49,20 @@ function AdminCustomers() {
     }
   }
 
-  async function deleteCustomer(idd) {
+  async function deleteEnquiry(idd) {
     try {
       let payload = { id: idd };
-      const deletedCustomer = await deleteCustomerApi(payload);
+      const deletedEnquiry = await deleteEnquiryApi(payload);
 
-      if (deletedCustomer.message === "Customer deleted successfully!") {
-        console.log(deletedCustomer);
+      if (deletedEnquiry.message === "Enquiry deleted successfully!") {
+        console.log(deletedEnquiry);
         toast.success("Delete Successfully");
         setToggler((state) => !state);
       } else {
-        if (Object.values(deletedCustomer.data).length > 0) {
+        if (Object.values(deletedEnquiry.data).length > 0) {
           toast.warn(Object.values(data.data)[0][0]);
         } else {
-          toast.warn(deletedCustomer.message);
+          toast.warn(deletedEnquiry.message);
         }
       }
     } catch (error) {
@@ -91,11 +91,11 @@ function AdminCustomers() {
           <AdminSidebar />
           <div className="adRightContent">
             <div className="pathSec">
-              <div className="title">Contacts</div>
+              <div className="title">Enquiry</div>
               <div className="path">
-                Admin &gt; <span> Contacts</span>
+                Admin &gt; <span> Enquiry</span>
               </div>
-              <Link to={"/admin-customers/add"}>
+              <Link to={"/admin-enquiry/add"}>
                 <button className="addBtn">ADD new</button>
               </Link>
             </div>
@@ -125,7 +125,7 @@ function AdminCustomers() {
 
                         <td>
                           <div className="actions">
-                            <Link to={`/admin-customers/update/${item.id}`}>
+                            <Link to={`/admin-enquiry/update/${item.id}`}>
                               <button className="EditIcobtn">
                                 <MdModeEditOutline />
                               </button>
@@ -133,7 +133,7 @@ function AdminCustomers() {
 
                             <button
                               onClick={() => {
-                                deleteCustomer(item.id);
+                                deleteEnquiry(item.id);
                               }}
                               className="EditDltbtn"
                             >
@@ -165,4 +165,4 @@ function AdminCustomers() {
   );
 }
 
-export default AdminCustomers;
+export default AdminEnquiry;

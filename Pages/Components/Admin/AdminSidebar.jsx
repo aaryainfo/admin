@@ -46,7 +46,18 @@ export default function AdminSidebar() {
         </div>
         <div className="sideLinks">
           <NavLink className="siLink" to={"/admin-customers"}>
-            <FaUserAlt className="catIcons" /> Contact Us List
+            <FaUserAlt className="catIcons" /> Contacts
+          </NavLink>
+        </div>
+
+        <div className="sideLinks">
+          <NavLink className="siLink" to={"/admin-enquiry"}>
+            <FaUserAlt className="catIcons" /> Enquiries
+          </NavLink>
+        </div>
+        <div className="sideLinks">
+          <NavLink className="siLink" to={"/admin-webusers"}>
+            <FaUserAlt className="catIcons" /> Customers
           </NavLink>
         </div>
       </div>

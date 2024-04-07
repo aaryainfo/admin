@@ -112,9 +112,9 @@ function AdminUpdateCustomer() {
           <AdminSidebar />
           <div className="adRightContent">
             <div className="pathSec">
-              <div className="title">Update Customer</div>
+              <div className="title">Update Contact</div>
               <div className="path">
-                Admin &gt; Customers &gt; <span> Update Customer</span>
+                Admin &gt; Contacts &gt; <span> Update Contact</span>
               </div>
             </div>
             {/* add tag form */}
@@ -122,7 +122,7 @@ function AdminUpdateCustomer() {
             <div className="formDiv">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="formTitle">Update Customer</div>
+                  <div className="formTitle">Update Contact</div>
                   <div className="form">
                     <div className="inBox">
                       <div className="inTitle">
@@ -201,7 +201,7 @@ function AdminUpdateCustomer() {
                           updateCustomer();
                         }}
                       >
-                        Update Customer
+                        Update Contact
                       </button>
                       <Link to={"/admin-customers"}>
                         <button className="cancel">Cancel</button>
@@ -211,122 +211,6 @@ function AdminUpdateCustomer() {
                 </div>
               </div>
             </div>
-            {/* <div className="formDiv">
-              <div className="row">
-                <div className="col-lg-8">
-                  <div className="formTitle">Update Customer</div>
-
-                  <div className="form">
-                    <div className="inBox">
-                      <div className="inTitle">
-                        Title<span className="req">*</span>{" "}
-                      </div>
-                      <input
-                        type="text"
-                        name=""
-                        value={title}
-                        onChange={(e) => {
-                          SetTitle(e.target.value);
-                        }}
-                        className="inText"
-                        placeholder="Enter title"
-                        id=""
-                      />
-                    </div>
-                    <div className="inBox">
-                      <div className="inTitle">
-                        Content<span className="req">*</span>{" "}
-                      </div>
-                      <div className="row ">
-                        <div className="col-lg-12">
-                          <JoditEditor
-                            ref={editor3}
-                            value={content}
-                            tabIndex={1} // tabIndex of textarea
-                            onBlur={(newContent) => SetContent(newContent)} // preferred to use only this option to update the content for performance reasons
-                            onChange={(newContent) => {
-                              SetContent(newContent);
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="imgsDDiv">
-                      <div className="headi">Images</div>
-                      <label htmlFor="inpId" className="imgBtn">
-                        Choose image
-                      </label>
-                      <input
-                        onChange={(e) => {
-                          console.log("e: ", e);
-                          let newArr = [...images];
-
-                          // let b64 = URL.createObjectURL(e.target.files[0]);
-                          const reader = new FileReader();
-
-                          reader.onload = function (event) {
-                            const base64String = event.target.result;
-                            // Use base64String as needed
-                            newArr.push(base64String);
-                            setImages(newArr);
-                          };
-
-                          reader.readAsDataURL(e.target.files[0]);
-                        }}
-                        type="file"
-                        className="d-none"
-                        name=""
-                        id="inpId"
-                      />
-
-                      <div className="imgs">
-                        {images?.map((img, inx) => {
-                          return (
-                            <div key={inx} className="imgWrapper">
-                              <img src={img} width={70} alt="img" />
-                              <button
-                                onClick={() => {
-                                  dltImg(inx);
-                                }}
-                                className="cls"
-                              >
-                                X
-                              </button>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                    <div className="inBox">
-                      <div className="inTitle">Is Active</div>
-                      <input
-                        type="checkbox"
-                        checked={tagIsActive}
-                        onChange={(e) => {
-                          setTagIsActive(e.target.checked);
-                        }}
-                        name=""
-                        className="inCheck"
-                        id=""
-                      />
-                    </div>
-                    <div className="formBtns">
-                      <button
-                        className="add"
-                        onClick={() => {
-                          updateBlogs();
-                        }}
-                      >
-                        Add Blog
-                      </button>
-                      <Link to={"/admin-blogs"}>
-                        <button className="cancel">Cancel</button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

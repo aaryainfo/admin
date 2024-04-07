@@ -9,11 +9,11 @@ import { AiOutlineLink } from "react-icons/ai";
 import AdminHead from "../Components/Admin/Adminhead";
 import AdminSidebar from "../Components/Admin/Adminsidebar";
 import {
-  deleteCustomerApi,
-  getCustomerList1,
-} from "../../src/services/customer.service";
+  deleteWebuserApi,
+  getWebuserList1,
+} from "../../src/services/webuser.service";
 
-function AdminCustomers() {
+function AdminWebusers() {
   // products list states
   const [curPage, setCurPage] = useState("");
 
@@ -23,13 +23,13 @@ function AdminCustomers() {
   const [toggler, setToggler] = useState(false);
 
   useEffect(() => {
-    getCustomerList();
+    getWebuserList();
   }, [toggler, setToggler]);
 
-  async function getCustomerList() {
+  async function getWebuserList() {
     try {
-      const customerList = await getCustomerList1();
-      const data = customerList.data; // await res.json()
+      const webuserList = await getWebuserList1();
+      const data = webuserList.data; // await res.json()
       console.log(data);
       // setProductListState(data.data.product_list.product_data)
 
@@ -49,20 +49,20 @@ function AdminCustomers() {
     }
   }
 
-  async function deleteCustomer(idd) {
+  async function deleteWebuser(idd) {
     try {
       let payload = { id: idd };
-      const deletedCustomer = await deleteCustomerApi(payload);
+      const deletedWebuser = await deleteWebuserApi(payload);
 
-      if (deletedCustomer.message === "Customer deleted successfully!") {
-        console.log(deletedCustomer);
+      if (deletedWebuser.message === "Webuser deleted successfully!") {
+        console.log(deletedWebuser);
         toast.success("Delete Successfully");
         setToggler((state) => !state);
       } else {
-        if (Object.values(deletedCustomer.data).length > 0) {
+        if (Object.values(deletedWebuser.data).length > 0) {
           toast.warn(Object.values(data.data)[0][0]);
         } else {
-          toast.warn(deletedCustomer.message);
+          toast.warn(deletedWebuser.message);
         }
       }
     } catch (error) {
@@ -91,11 +91,11 @@ function AdminCustomers() {
           <AdminSidebar />
           <div className="adRightContent">
             <div className="pathSec">
-              <div className="title">Contacts</div>
+              <div className="title">Customers</div>
               <div className="path">
-                Admin &gt; <span> Contacts</span>
+                Admin &gt; <span> Customers</span>
               </div>
-              <Link to={"/admin-customers/add"}>
+              <Link to={"/admin-webusers/add"}>
                 <button className="addBtn">ADD new</button>
               </Link>
             </div>
@@ -107,7 +107,7 @@ function AdminCustomers() {
                     <td>Sr No.</td>
                     <td>Name</td>
                     <td>Email</td>
-                    <td>Contact</td>
+                    <td>Password</td>
                     <td>Updated At</td>
                     <td>Action</td>
                   </tr>
@@ -120,12 +120,12 @@ function AdminCustomers() {
 
                         <td>{item.fullName}</td>
                         <td>{item.email}</td>
-                        <td>{item.contact}</td>
+                        <td>{item.password}</td>
                         <td>{dateFormat(item.updatedAt)}</td>
 
                         <td>
                           <div className="actions">
-                            <Link to={`/admin-customers/update/${item.id}`}>
+                            <Link to={`/admin-webusers/update/${item.id}`}>
                               <button className="EditIcobtn">
                                 <MdModeEditOutline />
                               </button>
@@ -133,7 +133,7 @@ function AdminCustomers() {
 
                             <button
                               onClick={() => {
-                                deleteCustomer(item.id);
+                                deleteWebuser(item.id);
                               }}
                               className="EditDltbtn"
                             >
@@ -165,4 +165,4 @@ function AdminCustomers() {
   );
 }
 
-export default AdminCustomers;
+export default AdminWebusers;

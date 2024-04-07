@@ -117,7 +117,7 @@ function AdminAddProperty() {
           <AdminSidebar />
           <div className="adRightContent">
             <div className="pathSec">
-              <div className="propertyType">Add Property</div>
+              <div className="title">Add Property</div>
               <div className="path">
                 Admin &gt; Properties &gt; <span> Add Property</span>
               </div>
@@ -126,10 +126,10 @@ function AdminAddProperty() {
             <div className="formDiv">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="formPropertyType">Add Property</div>
+                  <div className="formTitle">Add Property</div>
                   <div className="form">
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Property<span className="req">*</span>{" "}
                       </div>
                       <div style={{ display: "flex", flexDirection: "row" }}>
@@ -172,7 +172,7 @@ function AdminAddProperty() {
                       </div>
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Property Type<span className="req">*</span>{" "}
                       </div>
                       <select
@@ -194,7 +194,7 @@ function AdminAddProperty() {
                       </select>
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Name<span className="req">*</span>{" "}
                       </div>
                       <input
@@ -210,7 +210,7 @@ function AdminAddProperty() {
                       />
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Price<span className="req">*</span>{" "}
                       </div>
                       <input
@@ -226,7 +226,7 @@ function AdminAddProperty() {
                       />
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Unit<span className="req">*</span>{" "}
                       </div>
                       <input
@@ -242,7 +242,7 @@ function AdminAddProperty() {
                       />
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Location<span className="req">*</span>{" "}
                       </div>
                       <input
@@ -258,7 +258,7 @@ function AdminAddProperty() {
                       />
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Address<span className="req">*</span>{" "}
                       </div>
                       <input
@@ -274,7 +274,7 @@ function AdminAddProperty() {
                       />
                     </div>
                     <div className="inBox">
-                      <div className="inPropertyType">
+                      <div className="inTitle">
                         Carpet Area<span className="req">*</span>{" "}
                       </div>
                       <input
