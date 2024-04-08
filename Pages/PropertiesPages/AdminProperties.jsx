@@ -9,11 +9,12 @@ import { AiOutlineLink } from "react-icons/ai";
 import AdminHead from "../Components/Admin/Adminhead";
 import AdminSidebar from "../Components/Admin/Adminsidebar";
 import {
-  deleteCustomerApi,
-  getCustomerList1,
-} from "../../src/services/customer.service";
+  deletePropertyApi,
+  getPropertyList1,
+} from "../../src/services/property.service";
+import { OptionsPropertyTypeEnum } from "../enums/property.enum";
 
-function AdminCustomers() {
+function AdminProperties() {
   // products list states
   const [curPage, setCurPage] = useState("");
 
@@ -23,13 +24,13 @@ function AdminCustomers() {
   const [toggler, setToggler] = useState(false);
 
   useEffect(() => {
-    getCustomerList();
-  }, [toggler, setToggler]);
+    getPropertyList();
+  }, [toggler]);
 
-  async function getCustomerList() {
+  async function getPropertyList() {
     try {
-      const customerList = await getCustomerList1();
-      const data = customerList.data; // await res.json()
+      const propertyList = await getPropertyList1();
+      const data = propertyList.data; // await res.json()
       console.log(data);
       // setProductListState(data.data.product_list.product_data)
 
@@ -49,20 +50,20 @@ function AdminCustomers() {
     }
   }
 
-  async function deleteCustomer(idd) {
+  async function deleteProperty(idd) {
     try {
       let payload = { id: idd };
-      const deletedCustomer = await deleteCustomerApi(payload);
+      const deletedProperty = await deletePropertyApi(payload);
 
-      if (deletedCustomer.message === "Customer deleted successfully!") {
-        console.log(deletedCustomer);
+      if (deletedProperty.message === "Property deleted successfully!") {
+        console.log(deletedProperty);
         toast.success("Delete Successfully");
         setToggler((state) => !state);
       } else {
-        if (Object.values(deletedCustomer.data).length > 0) {
+        if (Object.values(deletedProperty.data).length > 0) {
           toast.warn(Object.values(data.data)[0][0]);
         } else {
-          toast.warn(deletedCustomer.message);
+          toast.warn(deletedProperty.message);
         }
       }
     } catch (error) {
@@ -91,11 +92,11 @@ function AdminCustomers() {
           <AdminSidebar />
           <div className="adRightContent">
             <div className="pathSec">
-              <div className="title">Contacts</div>
+              <div className="title">Properties</div>
               <div className="path">
-                Admin &gt; <span> Contacts</span>
+                Admin &gt; <span> Properties</span>
               </div>
-              <Link to={"/admin-customers/add"}>
+              <Link to={"/admin-properties/add"}>
                 <button className="addBtn">ADD new</button>
               </Link>
             </div>
@@ -105,10 +106,11 @@ function AdminCustomers() {
                 <thead>
                   <tr>
                     <td>Sr No.</td>
+                    <td>Property Type</td>
                     <td>Name</td>
-                    <td>Email</td>
-                    <td>Contact</td>
-                    <td>Updated At</td>
+                    <td>Price</td>
+                    <td>Location</td>
+                    <td>Is Active</td>
                     <td>Action</td>
                   </tr>
                 </thead>
@@ -117,15 +119,27 @@ function AdminCustomers() {
                     return (
                       <tr key={ind}>
                         <td>{(curPage + 1) * 0 + (ind + 1)}</td>
-
-                        <td>{item.fullName}</td>
-                        <td>{item.email}</td>
-                        <td>{item.contact}</td>
-                        <td>{dateFormat(item.updatedAt)}</td>
-
+                        {/* <td>
+                          <img
+                            src={(item.images && item.images[0]) ?? ""}
+                            width={100}
+                            alt="product image"
+                          />
+                        </td> */}
+                        <td>{OptionsPropertyTypeEnum[item.propertyType]}</td>
+                        <td>{item.name}</td>
+                        <td>{item.price}</td>
+                        <td>{item.location}</td>
+                        <td>
+                          {item.isActive ? (
+                            <div className="isAct">Yes</div>
+                          ) : (
+                            <div className="isNotAct">No</div>
+                          )}
+                        </td>
                         <td>
                           <div className="actions">
-                            <Link to={`/admin-customers/update/${item.id}`}>
+                            <Link to={`/admin-properties/update/${item.id}`}>
                               <button className="EditIcobtn">
                                 <MdModeEditOutline />
                               </button>
@@ -133,7 +147,7 @@ function AdminCustomers() {
 
                             <button
                               onClick={() => {
-                                deleteCustomer(item.id);
+                                deleteProperty(item.id);
                               }}
                               className="EditDltbtn"
                             >
@@ -165,4 +179,4 @@ function AdminCustomers() {
   );
 }
 
-export default AdminCustomers;
+export default AdminProperties;

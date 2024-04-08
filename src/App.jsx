@@ -36,6 +36,15 @@ import AdminUpdateBlog from "../Pages/BlogsPages/AdminUpdateBlog";
 import AdminCustomers from "../Pages/CustomersPages/AdminCustomers";
 import AdminAddCustomer from "../Pages/CustomersPages/AdminAddCustomer";
 import AdminUpdateCustomer from "../Pages/CustomersPages/AdminUpdateCustomer";
+import AdminProperties from "../Pages/PropertiesPages/AdminProperties";
+import AdminAddProperty from "../Pages/PropertiesPages/AdminAddProperty";
+import AdminUpdateProperty from "../Pages/PropertiesPages/AdminUpdateProperty";
+import AdminEnquiry from "../Pages/EnquiryPages/AdminEnquiry";
+import AdminAddEnquiry from "../Pages/EnquiryPages/AdminAddEnquiry";
+import AdminUpdateEnquiry from "../Pages/EnquiryPages/AdminUpdateEnquiry";
+import AdminWebusers from "../Pages/WebusersPages/AdminWebusers";
+import AdminAddWebuser from "../Pages/WebusersPages/AdminAddWebuser";
+import AdminUpdateWebuser from "../Pages/WebusersPages/AdminUpdateWebuser";
 // added comment
 
 function App() {
@@ -94,12 +103,35 @@ function App() {
               path="/admin-blogs/update/:id"
               element={<AdminUpdateBlog />}
             />
-
             <Route path="/admin-customers" element={<AdminCustomers />} />
             <Route path="/admin-customers/add" element={<AdminAddCustomer />} />
             <Route
               path="/admin-customers/update/:id"
               element={<AdminUpdateCustomer />}
+            />
+            <Route path="/admin-properties" element={<AdminProperties />} />
+            <Route
+              path="/admin-properties/add"
+              element={<AdminAddProperty />}
+            />
+            <Route
+              path="/admin-properties/update/:id"
+              element={<AdminUpdateProperty />}
+            />
+            <Route path="/admin-enquiry" element={<AdminEnquiry />} />
+
+            <Route path="/admin-enquiry/add" element={<AdminAddEnquiry />} />
+            <Route
+              path="/admin-enquiry/update/:id"
+              element={<AdminUpdateEnquiry />}
+            />
+
+            <Route path="/admin-webusers" element={<AdminWebusers />} />
+
+            <Route path="/admin-webusers/add" element={<AdminAddWebuser />} />
+            <Route
+              path="/admin-webusers/update/:id"
+              element={<AdminUpdateWebuser />}
             />
           </>
         )}
