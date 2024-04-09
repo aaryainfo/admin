@@ -45,6 +45,7 @@ import AdminUpdateEnquiry from "../Pages/EnquiryPages/AdminUpdateEnquiry";
 import AdminWebusers from "../Pages/WebusersPages/AdminWebusers";
 import AdminAddWebuser from "../Pages/WebusersPages/AdminAddWebuser";
 import AdminUpdateWebuser from "../Pages/WebusersPages/AdminUpdateWebuser";
+import IndexPage from "./FrontendUser/Pages/IndexPage";
 // added comment
 
 function App() {
@@ -133,6 +134,8 @@ function App() {
               path="/admin-webusers/update/:id"
               element={<AdminUpdateWebuser />}
             />
+
+            <Route path="/user-index" element={<IndexPage />} />
           </>
         )}
 

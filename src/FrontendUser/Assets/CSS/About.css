@@ -1,0 +1,983 @@
+.aboutus-sec .about-us-child {
+  background: url("/Assets/Images/Banner-Search.jpg");
+}
+.aboutus-sec .about-us-child .about-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.aboutus-sec .about-us-child .about-head h2 {
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-family: "Din";
+}
+@media screen and (max-width: 600px) {
+  .aboutus-sec .about-us-child .about-head h2 {
+    font-size: 25px;
+  }
+}
+.aboutus-sec .about-us-child .about-head .subtitle a {
+  color: #72b70f !important;
+  text-decoration: none;
+  font-family: "Din";
+}
+.aboutus-sec .about-us-child .about-head .subtitle span {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Din";
+}
+
+.business-background {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.business-background .bisuness-back-child .img-cnt .ab-img {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.business-background .bisuness-back-child .img-cnt .bisunesse-head {
+  margin: 0 0 15px 0;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: "Din";
+  padding: 0;
+  color: #000;
+}
+.business-background .bisuness-back-child .img-cnt .bisunesse-head.add-css {
+  margin-top: 25px;
+}
+.business-background .bisuness-back-child .img-cnt .bisuness-para {
+  color: #555;
+  font-size: 14px;
+  font-family: "Din";
+}
+
+.agents {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.agents .agents-child .ad-bottom {
+  margin-bottom: 40px;
+}
+.agents .agents-child .agent1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.agents .agents-child .agent1 .name h4 {
+  font-size: 19px;
+  font-weight: normal;
+  font-family: "Din";
+  padding: 0;
+  color: #000;
+}
+@media screen and (max-width: 576px) {
+  .agents .agents-child .agent1 .name h4 {
+    margin-top: 10px;
+  }
+}
+.agents .agents-child .agent1 .name .cnt {
+  color: #555;
+  font-size: 14px;
+  font-family: "Din";
+}
+.agents .agents-child .mail-box {
+  display: flex;
+  align-items: start;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.agents .agents-child .mail-box i {
+  color: #555;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.agents .agents-child .mail-box p {
+  color: #72b70f;
+  font-family: "Din";
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.agents .agents-child .mail-box p.fn-color {
+  color: #555;
+}
+
+.takeover-market-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.takeover-market-section .takover-market .market-section {
+  margin-bottom: 50px;
+}
+.takeover-market-section .takover-market .market-section .market-img {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+@media screen and (max-width: 576px) {
+  .takeover-market-section .takover-market .market-section .market-img {
+    margin-bottom: 0;
+  }
+}
+.takeover-market-section .takover-market .market-section .creative-bisuness {
+  color: #72b70f;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Din";
+}
+.takeover-market-section .takover-market .market-section .creative-bisuness a {
+  color: #72b70f;
+  text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  .takeover-market-section .takover-market .market-section .creative-bisuness {
+    font-size: 20px;
+  }
+}
+.takeover-market-section .takover-market .market-section .creative-bisuness:hover a {
+  color: #000 !important;
+  text-decoration: underline;
+}
+.takeover-market-section .takover-market .market-section .info {
+  color: #999;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Din";
+}
+.takeover-market-section .takover-market .market-section .content {
+  color: #555;
+  font-size: 14px;
+  font-family: "Din";
+}
+.takeover-market-section .takover-market .market-section .read-btn {
+  margin-top: 20px;
+  background-color: #222;
+  padding: 2px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  border: none;
+  font-family: "Din";
+}
+.takeover-market-section .takover-market .market-section .read-btn:hover {
+  background: #72b70f;
+  color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .takeover-market-section .takover-market .market-section .read-btn {
+    margin-top: 0;
+  }
+}
+.takeover-market-section .takover-market .market-section .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.takeover-market-section .takover-market .tabination-sec .nav-pills {
+  border-bottom: 1px solid #dddddd;
+}
+.takeover-market-section .takover-market .tabination-sec .nav-pills .nav-link {
+  border-radius: 0;
+  color: #72b70f;
+  font-family: "Din";
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 1px solid transparent;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.takeover-market-section .takover-market .tabination-sec .nav-pills .nav-link.active {
+  background: #72b70f;
+  color: #fff;
+}
+.takeover-market-section .takover-market .tabination-sec .tab-content .real-head {
+  color: #72b70f;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Din";
+  margin-top: 10px;
+}
+.takeover-market-section .takover-market .tabination-sec .tab-content .info {
+  color: #999;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Din";
+}
+.takeover-market-section .takover-market .tabination-sec .tab-content .info.add-bt {
+  margin-bottom: 15px;
+}
+
+.form-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form-section .form-child .text-input {
+  padding: 10px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.form-section .form-child .text-input1 {
+  padding: 10px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  height: auto;
+}
+.form-section .form-child ::-moz-placeholder {
+  color: #555555;
+  font-size: 14px;
+  font-family: "Din";
+}
+.form-section .form-child ::placeholder {
+  color: #555555;
+  font-size: 14px;
+  font-family: "Din";
+}
+.form-section .form-child .send-msg {
+  background-color: #72b70f;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Din";
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+.form-section .map-section {
+  border: 1px solid #e3e3e3;
+  padding: 19px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .form-section .map-section {
+    margin-top: 50px;
+  }
+}
+
+.buy-sale-rent-sec {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.buy-sale-rent-sec .search-form .search-head {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.buy-sale-rent-sec .search-form .search-head .search {
+  margin: 17px 0;
+  font-weight: normal;
+  font-family: "Din";
+  font-size: 19px;
+}
+.buy-sale-rent-sec .search-form .form-input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.buy-sale-rent-sec .search-form .form-input:focus {
+  box-shadow: 1px 1px 5px rgba(0, 123, 255, 0.5);
+}
+.buy-sale-rent-sec .search-form .form-input.add-margin {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .buy-sale-rent-sec .search-form .form-input.add-padding {
+    margin-bottom: 20px;
+  }
+}
+.buy-sale-rent-sec .search-form ::-moz-placeholder {
+  font-family: "Din";
+  font-size: 14px;
+}
+.buy-sale-rent-sec .search-form ::placeholder {
+  font-family: "Din";
+  font-size: 14px;
+}
+.buy-sale-rent-sec .search-form .propertis-sec {
+  margin-top: 20px;
+}
+.buy-sale-rent-sec .search-form .find-btn {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #72b70f;
+  border: 1px solid #72b70f;
+  padding: 6px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  font-family: "din";
+  outline: none;
+}
+.buy-sale-rent-sec .search-form .find-btn a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .buy-sale-rent-sec .hot-properties-sec {
+    display: none;
+  }
+}
+.buy-sale-rent-sec .hot-properties-sec .search-head {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.buy-sale-rent-sec .hot-properties-sec .search-head .search {
+  margin: 17px 0;
+  font-weight: normal;
+  font-family: "Din";
+  font-size: 19px;
+}
+.buy-sale-rent-sec .hot-properties-sec .properits-1 {
+  margin-bottom: 30px;
+}
+.buy-sale-rent-sec .hot-properties-sec .properits-1 .img1 img {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+}
+.buy-sale-rent-sec .hot-properties-sec .properits-1 .propertis-detail .detail-head {
+  color: #72b70f;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Din";
+}
+.buy-sale-rent-sec .hot-properties-sec .properits-1 .propertis-detail .price {
+  color: #555;
+  margin-bottom: 5px;
+  font-family: "Din";
+  font-size: 16px;
+}
+.buy-sale-rent-sec .sort-properties {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-sale-rent-sec .sort-properties .showing-nm {
+  margin-top: 10px;
+  color: #555;
+  font: normal 13px/22px Arial;
+}
+.buy-sale-rent-sec .sort-properties .form-input {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  font-family: "Din";
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.buy-sale-rent-sec .sort-properties .form-input:focus {
+  box-shadow: 1px 1px 5px rgba(0, 123, 255, 0.5);
+}
+.buy-sale-rent-sec .main-properties {
+  margin-top: 30px;
+}
+.buy-sale-rent-sec .main-properties .properties {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 30px;
+}
+.buy-sale-rent-sec .main-properties .properties .image-holder1 {
+  position: relative;
+}
+.buy-sale-rent-sec .main-properties .properties .image-holder1 .status {
+  font-family: "Din";
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 0 3px;
+  text-align: right;
+  font-size: 12px;
+  background: rgba(104, 167, 13, 0.8);
+}
+.buy-sale-rent-sec .main-properties .properties .image-holder1 .status.status-color {
+  background-color: rgba(255, 0, 0, 0.568);
+}
+.buy-sale-rent-sec .main-properties .properties .royal-head {
+  text-align: center;
+  margin: 10px 0;
+}
+.buy-sale-rent-sec .main-properties .properties .royal-head a {
+  color: #72b70f;
+  text-decoration: none;
+  outline: none;
+  font-family: "Din";
+}
+.buy-sale-rent-sec .main-properties .properties .royal-head a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.buy-sale-rent-sec .main-properties .properties .price {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+  font-family: "Din";
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail {
+  padding-bottom: 30PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color: black !important;
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span .tool {
+  position: relative;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0;
+  background: #000;
+  width: 96px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Din";
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span .tool::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  top: -3px;
+  left: 5px;
+  right: 0;
+  background: black;
+  transform: rotate(41deg);
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span:hover .tool {
+  opacity: 1;
+  transition: 2sec;
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span {
+  width: 25px;
+  height: 25px;
+  background-color: #555;
+  display: inline-block;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  color: #fff !important;
+  cursor: crosshair;
+}
+.buy-sale-rent-sec .main-properties .properties .listing-detail span:hover {
+  background-color: #72b70f;
+  color: #fff;
+}
+.buy-sale-rent-sec .main-properties .properties .view-detail {
+  background: #64a30a;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+.buy-sale-rent-sec .main-properties .properties .view-detail:hover {
+  background: #428bca;
+}
+.buy-sale-rent-sec .main-properties .properties .view-detail a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Helvetica";
+}
+.buy-sale-rent-sec .pagination-section {
+  margin-top: 20px;
+}
+.buy-sale-rent-sec .pagination-section .page-link {
+  border-radius: 0;
+  color: #64a30a;
+  padding: 0;
+  margin: 0;
+  padding: 2px 12px;
+  box-shadow: none;
+}
+.buy-sale-rent-sec .pagination-section .page-link:hover {
+  color: #000;
+}
+.buy-sale-rent-sec .pagination-section .page-link i {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-details-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.blog-details-section .creative-bisuness-sec .heading-1 {
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-family: "Din";
+  color: #000;
+}
+.blog-details-section .creative-bisuness-sec .info {
+  color: #999;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: "Din";
+}
+.blog-details-section .creative-bisuness-sec .img1 {
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.blog-details-section .creative-bisuness-sec .detail-para {
+  margin-bottom: 30px;
+  color: #555;
+  font-family: "Din";
+  font-size: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .blog-details-section .blog-detail-tabination {
+    display: none;
+  }
+}
+.blog-details-section .blog-detail-tabination .nav-pills {
+  border-bottom: 1px solid #dddddd;
+}
+.blog-details-section .blog-detail-tabination .nav-pills .nav-link {
+  border-radius: 0;
+  color: #72b70f;
+  font-family: "Din";
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 1px solid transparent;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.blog-details-section .blog-detail-tabination .nav-pills .nav-link.active {
+  background: #72b70f;
+  color: #fff;
+}
+.blog-details-section .blog-detail-tabination .tab-content .real-head {
+  color: #72b70f;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Din";
+  margin-top: 10px;
+}
+.blog-details-section .blog-detail-tabination .tab-content .info {
+  color: #999;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Din";
+}
+.blog-details-section .blog-detail-tabination .tab-content .info.add-bt {
+  margin-bottom: 15px;
+}
+
+.properties-details {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .properties-details {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .properties-details .hot-properties-sec {
+    display: none;
+  }
+}
+.properties-details .hot-properties-sec .search-head {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .hot-properties-sec .search-head .search {
+  margin: 17px 0;
+  font-weight: normal;
+  font-family: "Din";
+  font-size: 19px;
+}
+.properties-details .hot-properties-sec .properits-1 {
+  margin-bottom: 30px;
+}
+.properties-details .hot-properties-sec .properits-1 .img1 img {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+}
+.properties-details .hot-properties-sec .properits-1 .propertis-detail .detail-head {
+  color: #72b70f;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Din";
+}
+.properties-details .hot-properties-sec .properits-1 .propertis-detail .price {
+  color: #555;
+  margin-bottom: 5px;
+  font-family: "Din";
+  font-size: 16px;
+}
+.properties-details .advertisement-sec {
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .properties-details .advertisement-sec {
+    display: none;
+  }
+}
+.properties-details .advertisement-sec .search-head .search {
+  margin: 10px 0;
+  font-weight: normal;
+  font-family: "Din";
+  font-size: 19px;
+}
+.properties-details .properti-heading {
+  font-weight: normal;
+  font-family: "Din";
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .properties-details .properti-heading {
+    font-size: 28px;
+  }
+}
+.properties-details .properties-imgs .proper-img:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+}
+.properties-details .properties-imgs .owl-theme {
+  position: relative;
+}
+.properties-details .properties-imgs .owl-theme button img {
+  border: 1px solid redl;
+}
+.properties-details .properties-imgs .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.properties-details .properties-imgs .owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.properties-details .properties-imgs .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px !important;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+.properties-details .properties-imgs .owl-dots .owl-dot {
+  bottom: 20%;
+}
+.properties-details .properties-imgs .owl-dots .owl-dot.active span {
+  background-color: white;
+  height: 12px;
+  width: 12px;
+}
+.properties-details .properties-imgs .owl-dots span {
+  height: 12px;
+  width: 12px;
+  margin: 3px;
+  border: 1px solid #888;
+  background: none;
+}
+.properties-details .properties-cnt .search-head {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .properties-cnt .search-head i {
+  font-size: 20px;
+}
+.properties-details .properties-cnt .search-head .search {
+  margin: 17px 0;
+  font-weight: normal;
+  font-family: "Din";
+  font-size: 19px;
+}
+.properties-details .properties-cnt .content {
+  color: #555;
+  font: normal 13px/22px Arial;
+  font-family: "Din";
+  margin-bottom: 30px;
+}
+.properties-details .properties-cnt .well {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 15px;
+}
+@media screen and (max-width: 768px) {
+  .properties-details .properties-cnt .well {
+    width: 100%;
+  }
+}
+.properties-details .doller-sec .doller {
+  font-size: 28px;
+  color: #72b70f;
+  padding: 0;
+  border-radius: 5px;
+  font-family: "Din";
+}
+.properties-details .doller-sec .area {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font: normal 17px Arial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .agents-details {
+  margin-top: 30px;
+}
+.properties-details .agents-details .area {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font: normal 17px Arial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .agents-details .name {
+  padding-left: 24px;
+  color: #999;
+  margin-bottom: 10px;
+  font-family: "Din";
+  font-size: 17px;
+}
+.properties-details .availabilty-sec {
+  margin-top: 30px;
+}
+.properties-details .availabilty-sec .area {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font: normal 15px Arial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .availabilty-sec .listing-detail {
+  margin-top: 10px;
+  padding-bottom: 30PX;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.properties-details .availabilty-sec .listing-detail span {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color: black !important;
+}
+.properties-details .availabilty-sec .listing-detail span .tool {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0;
+  background: #000;
+  width: 96px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Din";
+}
+.properties-details .availabilty-sec .listing-detail span:hover .tool {
+  opacity: 1;
+  transition: 2sec;
+}
+.properties-details .availabilty-sec .listing-detail span {
+  width: 25px;
+  height: 25px;
+  background-color: #555;
+  display: inline-block;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  color: #fff !important;
+  cursor: crosshair;
+}
+.properties-details .availabilty-sec .listing-detail span:hover {
+  background-color: #72b70f;
+  color: #fff;
+}
+.properties-details .post-inquiry .area {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font: normal 15px Arial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.properties-details .post-inquiry .equiry-form {
+  margin-top: 10px;
+}
+.properties-details .post-inquiry .equiry-form .form-input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  height: auto;
+  outline: none;
+}
+.properties-details .post-inquiry .equiry-form .form-input:focus {
+  box-shadow: -1px 0px 8px 0px rgba(0, 123, 255, 0.5);
+  border: 1px solid rgba(0, 123, 255, 0.5);
+}
+.properties-details .post-inquiry .equiry-form ::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.428;
+  color: #555555;
+  font-family: "Din";
+}
+.properties-details .post-inquiry .equiry-form ::placeholder {
+  font-size: 14px;
+  line-height: 1.428;
+  color: #555555;
+  font-family: "Din";
+}
+.properties-details .post-inquiry .equiry-form .msg-btn {
+  background: #64a30a;
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding: 6px 12px;
+  font-family: "Din";
+  border-radius: 5px;
+}
+@media screen and (max-width: 1200px) {
+  .properties-details .add-margin {
+    margin-top: 30px;
+  }
+}
+
+.rigester-form .form-input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  margin-bottom: 15px;
+  padding: 10px;
+  height: 50px;
+  outline: none;
+}
+.rigester-form .form-input.add-height {
+  height: auto;
+}
+.rigester-form .form-input:focus {
+  box-shadow: -1px 0px 8px 0px rgba(0, 123, 255, 0.5);
+  border: 1px solid rgba(0, 123, 255, 0.5);
+}
+.rigester-form ::-moz-placeholder {
+  font-family: "Din";
+  font-size: "16px";
+  color: #a3a2a2;
+}
+.rigester-form ::placeholder {
+  font-family: "Din";
+  font-size: "16px";
+  color: #a3a2a2;
+}
+.rigester-form .register-btn {
+  background: #72b70f;
+  border: 1px solid #72b70f;
+  padding: 6px 20px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: "Din";
+  font-size: 15px;
+}/*# sourceMappingURL=About.css.map */
