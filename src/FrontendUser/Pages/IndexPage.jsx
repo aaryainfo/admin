@@ -762,181 +762,192 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      {/* <section className="about-us">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-6 col-md-9">
-          <div className="about-us-child">
-            <h2 className="about-us-head">About Us</h2>
-            <div className="about-us-content">
-              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-              interested. Sections
-              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-              reproduced in their exact
-              original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <section className="about-us">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-9">
+              <div className="about-us-child">
+                <h2 className="about-us-head">About Us</h2>
+                <div className="about-us-content">
+                  The standard chunk of Lorem Ipsum used since the 1500s is
+                  reproduced below for those interested. Sections 1.10.32 and
+                  1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                  also reproduced in their exact original form, accompanied by
+                  English versions from the 1914 translation by H. Rackham.
+                </div>
+                <div className="learn-more">
+                  <a href="./About.html">Learn More</a>
+                </div>
+              </div>
             </div>
-            <div className="learn-more">
-              <a href="./About.html">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-6 col-md-3">
-          <div className="about-us-child">
-            <h2 className="about-us-head mt-left">Recommended Properties</h2>
-            <div className="recomend-properties">
-              <div className="owl-carousel owl-theme" id="about-carasoul">
-                <div className="item">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <img src="/Images/AboutUs1.jpg" alt="" className="w-100">
+            <div className="col-lg-6 col-md-3">
+              <div className="about-us-child">
+                <h2 className="about-us-head mt-left">
+                  Recommended Properties
+                </h2>
+                <div className="recomend-properties">
+                  <div className="owl-carousel owl-theme" id="about-carasoul">
+                    <div className="item">
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <img
+                            src="/Images/AboutUs1.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                        <div className="col-lg-8">
+                          <p className="Integer1">
+                            <a href="#">Integer sed porta quam</a>
+                          </p>
+                          <div className="price">$300,000</div>
+                          <div className="more-details">
+                            <a href="./PropertyDetail.html"> More Details</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="col-lg-8">
-                      <p className="Integer1">
-                        <a href="#">Integer sed porta quam</a>
-                      </p>
-                      <div className="price">$300,000</div>
-                      <div className="more-details">
-                        <a href="./PropertyDetail.html"> More Details</a>
+                    <div className="item">
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <img
+                            src="/Images/AboutUs2.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                        <div className="col-lg-8">
+                          <p className="Integer1">
+                            <a href="#">Integer sed porta quam</a>
+                          </p>
+                          <div className="price">$300,000</div>
+                          <div className="more-details">
+                            <a href="./PropertyDetail.html"> More Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="item">
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <img
+                            src="/Images/AboutUs3.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                        <div className="col-lg-8">
+                          <p className="Integer1">
+                            <a href="#">Integer sed porta quam</a>
+                          </p>
+                          <div className="price">$300,000</div>
+                          <div className="more-details">
+                            <a href="./PropertyDetail.html"> More Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="item">
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <img
+                            src="/Images/AboutUs4.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                        <div className="col-lg-8">
+                          <p className="Integer1">
+                            <a href="#">Integer sed porta quam</a>
+                          </p>
+                          <div className="price">$300,000</div>
+                          <div className="more-details">
+                            <a href="./PropertyDetail.html"> More Details</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <img src="/Images/AboutUs2.jpg" alt="" className="w-100">
-                    </div>
-                    <div className="col-lg-8">
-                      <p className="Integer1">
-                        <a href="#">Integer sed porta quam</a>
-                      </p>
-                      <div className="price">$300,000</div>
-                      <div className="more-details">
-                        <a href="./PropertyDetail.html"> More Details</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <img src="/Images/AboutUs3.jpg" alt="" className="w-100">
-                    </div>
-                    <div className="col-lg-8">
-                      <p className="Integer1">
-                        <a href="#">Integer sed porta quam</a>
-                      </p>
-                      <div className="price">$300,000</div>
-                      <div className="more-details">
-                        <a href="./PropertyDetail.html"> More Details</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <img src="/Images/AboutUs4.jpg" alt="" className="w-100">
-                    </div>
-                    <div className="col-lg-8">
-                      <p className="Integer1">
-                        <a href="#">Integer sed porta quam</a>
-                      </p>
-                      <div className="price">$300,000</div>
-                      <div className="more-details">
-                        <a href="./PropertyDetail.html"> More Details</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section className="Footer">
-    <div className="footer-child">
-      <div className="container">
-        <div className="row gx-5">
-          <div className="col-md-3">
-            <h4 className="informatin-head">Information</h4>
-            <ul className="footer-link">
+      </section>
 
-              <li>
-                <a href="/About.html">About</a>
-              </li>
-              <li>
-                <a href="/Agents.html">Agents</a>
-              </li>
-              <li>
-                <a href="/Blog.html">Blog</a>
-              </li>
-              <li>
-                <a href="/Contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <h4 className="informatin-head mt-top">Newsletter</h4>
-            <p className="news-para">Get notified about the latest properties in our marketplace.</p>
-            <input type="text" className="form-input" placeholder="Enter Your email address">
-            <div className="Notify-btn">
-              Notify Me!
+      <section className="Footer">
+        <div className="footer-child">
+          <div className="container">
+            <div className="row gx-5">
+              <div className="col-md-3">
+                <h4 className="informatin-head">Information</h4>
+                <ul className="footer-link">
+                  <li>
+                    <a href="/About.html">About</a>
+                  </li>
+                  <li>
+                    <a href="/Agents.html">Agents</a>
+                  </li>
+                  <li>
+                    <a href="/Blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <h4 className="informatin-head mt-top">Newsletter</h4>
+                <p className="news-para">
+                  Get notified about the latest properties in our marketplace.
+                </p>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Enter Your email address"
+                />
+                <div className="Notify-btn">Notify Me!</div>
+              </div>
+              <div className="col-md-3">
+                <h4 className="informatin-head mt-top">Follow Us</h4>
+                <div className="media-icon">
+                  <div className="icon">
+                    <i className="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div className="icon">
+                    <i className="fa-brands fa-twitter"></i>
+                  </div>
+                  <div className="icon">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div className="icon">
+                    <i className="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <h4 className="informatin-head mt-top">Contact Us</h4>
+                <div className="contact-para">Bootstrap Realestate Inc.</div>
+                <div className="add">
+                  <i className="fa-solid fa-location-dot"></i>
+                  <div className="cnt">8290 Walk Street, Australia</div>
+                </div>
+                <div className="add">
+                  <i className="fa-solid fa-envelope"></i>
+                  <div className="cnt">hello@bootstrapreal.com</div>
+                </div>
+                <div className="add">
+                  <i className="fa-solid fa-phone"></i>
+                  <div className="cnt">(123) 456-7890</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="col-md-3">
-            <h4 className="informatin-head mt-top">Follow Us</h4>
-            <div className="media-icon">
-              <div className="icon">
-                <i className="fa-brands fa-facebook-f"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-twitter"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-instagram"></i>
-              </div>
-
-            </div>
-          </div>
-          <div className="col-md-3">
-            <h4 className="informatin-head mt-top">Contact Us</h4>
-            <div className="contact-para">
-              Bootstrap Realestate Inc.
-            </div>
-            <div className="add">
-              <i className="fa-solid fa-location-dot"></i>
-              <div className="cnt">
-                8290 Walk Street, Australia
-              </div>
-            </div>
-            <div className="add">
-              <i className="fa-solid fa-envelope"></i>
-              <div className="cnt">
-                hello@bootstrapreal.com
-              </div>
-            </div>
-            <div className="add">
-              <i className="fa-solid fa-phone"></i>
-              <div className="cnt">
-                (123) 456-7890
-              </div>
+            <div className="copy-right">
+              © Copyright 2024 | Aarya Infosolutions
             </div>
           </div>
         </div>
-        <div className="copy-right">
-          © Copyright 2024 | Aarya Infosolutions
-        </div>
-      </div>
-    </div>
-  </section> */}
+      </section>
     </>
   );
 }
