@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../common.css";
+// import HeaderLogo from "./Images/Header-logo.png";
 
 function IndexPage() {
+  // useEffect(() => {
+  //   console.log("hello: ", HeaderLogo);
+  // }, []);
   return (
     <>
       <header className="sticky-top">
@@ -71,8 +75,11 @@ function IndexPage() {
             <div className="row">
               <div className="col-sm-6">
                 <div className="mainlogo header-img">
+                  {/* <a href="./Index.html"> */}
+                  {/* <img src={HeaderLogo} alt="Header Logo" /> */}
+                  {/* </a> */}
                   <a href="./Index.html">
-                    <img src="./Assets/Images/Header-logo.png" alt="" />
+                    <img src="/Images/Header-logo.png" alt="" />
                   </a>
                 </div>
               </div>
@@ -365,9 +372,10 @@ function IndexPage() {
               <div className="item">
                 <div className="properties">
                   <div className="image-holder1">
+                    {/* src="./Images/Propeties-img1.jpg" */}
                     <img
-                      src="./Assets/Images/Propeties-img1.jpg"
-                      alt=""
+                      src="/Images/Propeties-img1.jpg"
+                      alt="jio"
                       className="w-100"
                     />
                     <div className="status">New</div>
@@ -415,7 +423,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img2.jpg"
+                      src="/Images/Propeties-img2.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -463,7 +471,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img3.jpg"
+                      src="/Images/Propeties-img3.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -512,7 +520,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img4.jpg"
+                      src="/Images/Propeties-img4.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -560,7 +568,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img1.jpg"
+                      src="/Images/Propeties-img1.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -609,7 +617,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img2.jpg"
+                      src="/Images/Propeties-img2.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -657,7 +665,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img1.jpg"
+                      src="/Images/Propeties-img1.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -706,7 +714,7 @@ function IndexPage() {
                 <div className="properties">
                   <div className="image-holder1">
                     <img
-                      src="./Assets/Images/Propeties-img2.jpg"
+                      src="/Images/Propeties-img2.jpg"
                       alt=""
                       className="w-100"
                     />
@@ -780,7 +788,7 @@ function IndexPage() {
                 <div className="item">
                   <div className="row">
                     <div className="col-lg-4">
-                      <img src="./Assets/Images/AboutUs1.jpg" alt="" className="w-100">
+                      <img src="/Images/AboutUs1.jpg" alt="" className="w-100">
                     </div>
                     <div className="col-lg-8">
                       <p className="Integer1">
@@ -796,7 +804,7 @@ function IndexPage() {
                 <div className="item">
                   <div className="row">
                     <div className="col-lg-4">
-                      <img src="./Assets/Images/AboutUs2.jpg" alt="" className="w-100">
+                      <img src="/Images/AboutUs2.jpg" alt="" className="w-100">
                     </div>
                     <div className="col-lg-8">
                       <p className="Integer1">
@@ -812,7 +820,7 @@ function IndexPage() {
                 <div className="item">
                   <div className="row">
                     <div className="col-lg-4">
-                      <img src="./Assets/Images/AboutUs3.jpg" alt="" className="w-100">
+                      <img src="/Images/AboutUs3.jpg" alt="" className="w-100">
                     </div>
                     <div className="col-lg-8">
                       <p className="Integer1">
@@ -828,7 +836,7 @@ function IndexPage() {
                 <div className="item">
                   <div className="row">
                     <div className="col-lg-4">
-                      <img src="./Assets/Images/AboutUs4.jpg" alt="" className="w-100">
+                      <img src="/Images/AboutUs4.jpg" alt="" className="w-100">
                     </div>
                     <div className="col-lg-8">
                       <p className="Integer1">
