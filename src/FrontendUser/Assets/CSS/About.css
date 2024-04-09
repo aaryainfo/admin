@@ -1,5 +1,5 @@
 .aboutus-sec .about-us-child {
-  background: url("/Assets/Images/Banner-Search.jpg");
+  background: url("../Images/Banner-Search.jpg");
 }
 .aboutus-sec .about-us-child .about-head {
   display: flex;
@@ -417,9 +417,11 @@
   margin-top: 30px;
 }
 .buy-sale-rent-sec .main-properties .properties {
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px;
+  padding-right: 8px; */
   margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
 }
 .buy-sale-rent-sec .main-properties .properties .image-holder1 {
   position: relative;

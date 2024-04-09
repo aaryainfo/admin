@@ -212,8 +212,8 @@ header {
 
     .banner-img {
 
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("/Assets/Images/Banner-img-5.jpg");
-        background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images/Banner-img-5.jpg");
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("../Images/Banner-img-5.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images/Banner-img-5.jpg");
         background-size: cover;
 
         background-position: center center;
@@ -222,8 +222,8 @@ header {
         height: 100%;
 
         &.banner-img1 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("/Assets/Images/Banner-img-2.jpg");
-            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-2.jpg");
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("../Images/Banner-img-2.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-2.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -232,8 +232,8 @@ header {
         }
 
         &.banner-img2 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("/Assets/Images//Banner-img-3.jpg");
-            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-3.jpg");
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("../Images//Banner-img-3.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-3.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -242,8 +242,8 @@ header {
         }
 
         &.banner-img3 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("/Assets/Images//Banner-img-4.jpg");
-            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-4.jpg");
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.644)), to(rgba(0, 0, 0, 0.726))), url("../Images//Banner-img-4.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-4.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -398,7 +398,7 @@ header {
 
 .banner-search {
     .banner-search-back {
-        background: url('/Assets/Images/Banner-Search.jpg');
+        background: url('./Assets/Images/Banner-Search.jpg');
         padding: 20px 0 10px 0;
 
         .search-head {
@@ -631,7 +631,7 @@ header {
         .properties {
             padding-left: 8px;
             padding-right: 8px;
-
+            margin-bottom: 30px;
             .image-holder1 {
                 position: relative;
 
@@ -931,7 +931,7 @@ header {
     margin-top: 50px;
 
     .footer-child {
-        background: url('/Assets/Images/Banner-Search.jpg');
+        background: url('./Assets/Images/Banner-Search.jpg');
         padding: 30px 0;
 
         .informatin-head {

@@ -120,7 +120,7 @@ header .first-header .header-child .navbar .MobileNewMenuList {
   }
 }
 header .second-header {
-  background: #FFF;
+  /* background: #FFF; */
   padding: 20px 0;
 }
 @media screen and (max-width: 576px) {
@@ -175,9 +175,9 @@ header .second-header .pull-right .header-child-list li a:hover {
     padding-left: 0;
   }
 }
-
+body {color:#555;font:normal 13px/22px Arial;background:url(../Images/bgmain.png) #eee;}
 .banner .banner-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images/Banner-img-5.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images/Banner-img-5.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ header .second-header .pull-right .header-child-list li a:hover {
   height: 100%;
 }
 .banner .banner-img.banner-img1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ header .second-header .pull-right .header-child-list li a:hover {
   height: 100%;
 }
 .banner .banner-img.banner-img2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,7 +201,7 @@ header .second-header .pull-right .header-child-list li a:hover {
   height: 100%;
 }
 .banner .banner-img.banner-img3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("/Assets/Images//Banner-img-4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.726)), url("../Images//Banner-img-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -335,7 +335,7 @@ header .second-header .pull-right .header-child-list li a:hover {
 }
 
 .banner-search .banner-search-back {
-  background: url("/Assets/Images/Banner-Search.jpg");
+  background: url("../Images/Banner-Search.jpg");
   padding: 20px 0 10px 0;
 }
 .banner-search .banner-search-back .search-head {
@@ -538,8 +538,11 @@ header .second-header .pull-right .header-child-list li a:hover {
   }
 }
 .featured-properties .properties-sec .properties {
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
 }
 .featured-properties .properties-sec .properties .image-holder1 {
   position: relative;
@@ -785,7 +788,7 @@ header .second-header .pull-right .header-child-list li a:hover {
   margin-top: 50px;
 }
 .Footer .footer-child {
-  background: url("/Assets/Images/Banner-Search.jpg");
+  background: url("../Images/Banner-Search.jpg");
   padding: 30px 0;
 }
 .Footer .footer-child .informatin-head {
@@ -897,6 +900,10 @@ header .second-header .pull-right .header-child-list li a:hover {
   color: #999;
   font-size: 20px;
 }
+/* .Footer .footer-child .media-icon .icon i {
+  background-image: url("/../Assets/Images/facebook.png");
+  background-repeat: no-repeat;
+} */
 .Footer .footer-child .contact-para {
   color: #999;
   font-family: "Din";
@@ -923,4 +930,48 @@ header .second-header .pull-right .header-child-list li a:hover {
   color: #999;
   font-family: "Din";
   font-size: 14px;
-}/*# sourceMappingURL=Index.css.map */
+}
+.whatsup-btn-container {
+  position: fixed;
+  bottom: -30px;
+  right: 20px;
+  padding: 24px;
+  opacity: 0;
+  animation: fade-up 1000ms forwards;
+  animation-delay: 1000ms;
+}
+@keyframes fade-up{
+100%{
+  bottom: 24x;
+  opacity: 1;
+}
+}
+
+.whatsup-btn-container .whatsup-btn {
+font-size: 48px;
+color: #25d366;
+display:inline-block;
+transition: all 400ms;
+}
+
+/* .whatsup-btn-container .whatsup-btn:hover{
+  transform: scale(1,2);
+} */
+
+.whatsup-btn-container span{
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  color: #075e54;
+  transform: rotateZ(20deg) translateX(10px);
+  opacity: 0;
+  transition: all 400ms;
+}
+
+.whatsup-btn-container .whatsup-btn:hover + span{
+  transform: rotateZ(0deg) translateX(0px);
+  opacity: 1;
+}
+/*# sourceMappingURL=Index.css.map */

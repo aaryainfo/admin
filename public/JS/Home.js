@@ -21,11 +21,7 @@ $('#banner-carasoul').owlCarousel({
         1000: {
             items: 1
         }
-    },
-    autoplayTimeout: 5000, // Autoplay interval in milliseconds
-    autoplayHoverPause: true, // Pause autoplay on mouse hover
-//   animateOut: 'fadeOut', // Set the animation for item transition out
-//   animateIn: 'fadeIn' // Set the animation for item transition in
+    }
 })
 //############## Featured Properties ###############//
 $('#properties-sec').owlCarousel({
@@ -79,7 +75,6 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
     navText: [
         "<i class='fa-solid fa-angle-left'></i>",
         "<i class='fa-solid fa-angle-right'></i>",
@@ -94,10 +89,7 @@ $('.owl-carousel').owlCarousel({
         1000: {
             items: 1
         }
-    },
-    autoplayTimeout: 5000, // Autoplay interval in milliseconds
-    autoplayHoverPause: true, // Pause autoplay on mouse hover
-//  
+    }
 })
 function moveCarousel(direction) {
     const carousel = document.querySelector('.carousel');
