@@ -1,107 +1,241 @@
-import React, { useEffect } from "react";
-import "../common.css";
-// import HeaderLogo from "./Images/Header-logo.png";
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function IndexPage() {
-  // useEffect(() => {
-  //   console.log("hello: ", HeaderLogo);
-  // }, []);
+  const url = 'http://localhost:8080/';//import.meta.env.REACT_APP_FIXED_URL
+  const navigate=useNavigate()
+  const [imgSlider,setImgSlider]=useState([]);
+
+  useEffect(() => {
+    $(function() {
+
+      properties();
+
+      //############## Banner-Section ###############//
+      $('#banner-carasoul').owlCarousel({
+        loop: true,
+        autoplay: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        },
+        autoplayTimeout: 5000, // Autoplay interval in milliseconds
+        autoplayHoverPause: true, // Pause autoplay on mouse hover
+      })
+      //############## Featured Properties ###############//
+      $('#properties-sec').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        speed: 1500,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 1,
+            },
+
+            768: {
+                items: 2,
+            },
+            998: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+      })
+
+      //############## About-Us ###############//
+      $('#about-carasoul').owlCarousel({
+        loop: true,
+        margin: 10,
+        // nav:true,
+        autoplay: true,
+        speed:2500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+      })
+
+      //############## PropertiesDetails ###############//
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        navText: [
+            "<i class='fa-solid fa-angle-left'></i>",
+            "<i class='fa-solid fa-angle-right'></i>",
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        },
+        autoplayTimeout: 5000, // Autoplay interval in milliseconds
+        autoplayHoverPause: true, // Pause autoplay on mouse hover
+      })
+      function moveCarousel(direction) {
+        const carousel = document.querySelector('.carousel');
+        const next = direction * carousel.offsetWidth;
+        carousel.scrollBy({
+          left: 100,
+          behavior: 'smooth'
+        });
+      }
+  });
+}, []);
+
+
+
+const properties = async () => {
+  try {
+    const api = await fetch(`${url}api/admin/property/get`, {
+      method: "GET",
+      headers: {
+        "Authorization": `Bearer ${ import.meta.env.AUTHTOKEN}`
+        }
+    });
+    if (!api.ok) {
+      throw new Error(`Failed to fetch data: ${api.status} ${api.statusText}`);
+  }
+    const respo = await api.json()
+          if (respo.data.length>0) {
+            setImgSlider(respo.data)
+
+          } else {
+            if (Object.values(respo.data).length > 0) {
+              //toast.warn(Object.values(respo.data)[0][0]);
+            } else {
+              //toast.warn(respo.message);
+            }
+          }
+
+  }
+  catch (error) {
+    console.log(error)
+  }
+}
+
+
   return (
     <>
-      <header className="sticky-top">
-        <div className="first-header">
-          <div className="container">
-            <div className="header-child">
-              <div className="row">
-                <div className="col-6"></div>
-                <div className="col-6">
-                  <div className="navbar" id="headDiv1">
-                    <ul className="menu-list">
-                      <li>
-                        <a href="./Index.html" className="active">
-                          Home
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/About.html">About</a>
-                      </li>
-                      <li>
-                        <a href="/Agents.html">Agents</a>
-                      </li>
-                      <li>
-                        <a href="/Blog.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="/Contact.html">Contact</a>
-                      </li>
-                    </ul>
-                    <div className="MobileMenuBar1 new-menubar">
-                      <span className="material-symbols-outlined cross  addToggler ">
-                        <i className="fa-solid fa-bars"></i>
-                      </span>
-                    </div>
-                    <div className="MobileNewMenuList">
-                      <ul className="menu-list">
-                        <li>
-                          <a href="./Index.html" className="active">
-                            Home
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/About.html">About</a>
-                        </li>
-                        <li>
-                          <a href="/Agents.html">Agents</a>
-                        </li>
-                        <li>
-                          <a href="/Blog.html">Blog</a>
-                        </li>
-                        <li>
-                          <a href="/Contact.html">Contact</a>
-                        </li>
-                      </ul>
-                      <div className="MobileMenuBar removeToggler">
-                        <i className="fa-solid fa-xmark"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <header className="">
+    <div className="first-header">
+      <div className="container">
+        <div className="header-child">
+          <div className="row">
+            <div className="col-6">
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="second-header">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6">
-                <div className="mainlogo header-img">
-                  {/* <a href="./Index.html"> */}
-                  {/* <img src={HeaderLogo} alt="Header Logo" /> */}
-                  {/* </a> */}
-                  <a href="./Index.html">
-                    <img src="/Images/Header-logo.png" alt="" />
-                  </a>
+            <div className="col-6">
+              <div className="navbar" id="headDiv1">
+                <ul className="menu-list">
+                  <li>
+                    <a href="./Index.html" className="active">Home</a>
+                  </li>
+                  <li>
+                    <a href="./About.html">About</a>
+                  </li>
+                  <li>
+                    <a href="./Agents.html">Agents</a>
+                  </li>
+                  <li>
+                    <a href="./Blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="./Contact.html">Contact</a>
+                  </li>
+                </ul>
+                <div className="MobileMenuBar1 new-menubar">
+                  <span className="material-symbols-outlined cross  addToggler ">
+                    <i className="fa-solid fa-bars"></i>
+                  </span>
                 </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="pull-right">
-                  <ul className="header-child-list">
+                <div className="MobileNewMenuList">
+                  <ul className="menu-list">
                     <li>
-                      <a href="./Buy.html">BUY</a>
+                      <a href="./Index.html" className="active">Home</a>
                     </li>
                     <li>
-                      <a href="./Buy.html">SALE</a>
+                      <a href="./About.html">About</a>
                     </li>
                     <li>
-                      <a href="./Buy.html"> RENT</a>
+                      <a href="./Agents.html">Agents</a>
+                    </li>
+                    <li>
+                      <a href="./Blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="./Contact.html">Contact</a>
                     </li>
                   </ul>
+                  <div className="MobileMenuBar removeToggler">
+                    <i className="fa-solid fa-xmark"></i>
+                  </div>
                 </div>
+
               </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="second-header">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-6">
+            <div className="mainlogo header-img">
+              <a href="./Index.html">
+                <img src="../Images/Header-logo.png" alt="Header-logo"/>
+              </a>
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <div className="pull-right">
+              <ul className="header-child-list">
+                <li>
+                  <a href="./Buy.html">BUY</a>
+                </li>
+                <li>
+                  <a href="./Buy.html">SALE</a>
+                </li>
+                <li>
+                  <a href="./Buy.html"> RENT</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
       <section className="banner">
         <div className="owl-carousel owl-theme" id="banner-carasoul">
           <div className="item">
@@ -122,7 +256,7 @@ function IndexPage() {
                           <div className="col-lg-6">
                             <div className="banner-content">
                               <h2 className="banner-head">
-                                2 Bed Rooms and 1 Dinning Room Aparment on Sale
+                                22 Bed Rooms and 1 Dinning Room Aparment on Sale
                               </h2>
                               <div className="locate">
                                 <div className="icon">
@@ -787,8 +921,32 @@ function IndexPage() {
                 </h2>
                 <div className="recomend-properties">
                   <div className="owl-carousel owl-theme" id="about-carasoul">
-                    <div className="item">
-                      <div className="row">
+                  <div>
+                  {/*Dynamic*/}
+                  {imgSlider.map(property => (
+                            <div key={property.id} className="item">
+                                <div className="row">
+                                    <div className="col-lg-4">
+                                        <img src="/Images/AboutUs1.jpg" alt="" className="w-100" />
+                                    </div>
+                                    <div className="col-lg-8">
+                                        <p className="Integer1">
+                                            <a href="#">{property.name}</a>
+                                        </p>
+                                        <div className="price">{property.price}</div>
+                                        <div className="more-details">
+                                            <a href="./PropertyDetail.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))} 
+                  </div>
+                  
+                  {/*Static*/}
+                    
+                    {/*<div className="item">
+                     <div className="row">
                         <div className="col-lg-4">
                           <img
                             src="/Images/AboutUs1.jpg"
@@ -806,7 +964,7 @@ function IndexPage() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div
                     <div className="item">
                       <div className="row">
                         <div className="col-lg-4">
@@ -866,7 +1024,7 @@ function IndexPage() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -912,18 +1070,16 @@ function IndexPage() {
                 <h4 className="informatin-head mt-top">Follow Us</h4>
                 <div className="media-icon">
                   <div className="icon">
-                    <i className="fa-brands fa-facebook-f"></i>
+                  <a href="https://www.facebook.com/yourPageURL" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
                   </div>
                   <div className="icon">
-                    <i className="fa-brands fa-twitter"></i>
+                    <a href="https://www.instagram.com/yourProfile" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-instagram"></i>
+                    </a>
                   </div>
-                  <div className="icon">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                  </div>
-                  <div className="icon">
-                    <i className="fa-brands fa-instagram"></i>
-                  </div>
-                </div>
+              </div>
               </div>
               <div className="col-md-3">
                 <h4 className="informatin-head mt-top">Contact Us</h4>
